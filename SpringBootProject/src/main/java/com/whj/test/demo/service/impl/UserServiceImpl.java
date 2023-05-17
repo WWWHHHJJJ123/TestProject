@@ -1,8 +1,11 @@
 package com.whj.test.demo.service.impl;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.whj.test.demo.domain.dto.UserPageResultVO;
+import com.whj.test.demo.domain.dto.UsrListParamDTO;
 import com.whj.test.demo.domain.enity.UserEntity;
 import com.whj.test.demo.domain.vo.UserPageParamDTO;
 import com.whj.test.demo.mapper.UserMapper;
@@ -62,4 +65,20 @@ public class UserServiceImpl implements UserService {
         }
         return users;
     }
+
+    @Override
+    public int insertUser(UserEntity user) {
+
+        int insert = userMapper.insert(user);
+        return insert;
+    }
+
+    @Override
+    public List<UserEntity> getUserListContainParam(UsrListParamDTO usrListParamDTO) {
+
+        List<UserEntity> userEntities = userMapper.selectList(Wrappers.<UserEntity>lambdaQuery()
+                                                                .like(UserEntity::getName, usrListParamDTO.getParam()));
+        return userEntities;
+    }
+
 }

@@ -2,6 +2,8 @@ package com.whj.test.demo.controller;
 
 import com.whj.test.common.AjaxResult;
 import com.whj.test.demo.domain.dto.UserPageResultVO;
+import com.whj.test.demo.domain.dto.UsrListParamDTO;
+import com.whj.test.demo.domain.enity.UserEntity;
 import com.whj.test.demo.domain.vo.UserPageParamDTO;
 import com.whj.test.demo.service.UserService;
 import io.swagger.annotations.Api;
@@ -37,5 +39,23 @@ public class UserController {
     @RequestMapping("/hello")
     public String hello(){
         return "hello";
+    }
+
+    @ApiOperation("插入一条user")
+    @PostMapping("/insertUser")
+    public AjaxResult insertUser(@RequestBody UserEntity user){
+        int i = userService.insertUser(user);
+        if (i==1){
+            return AjaxResult.success("成功插入一条用户");
+        }
+        return AjaxResult.error("操作失败");
+    }
+
+    @ApiOperation("根据输入的参数查询userList")
+    @PostMapping("/getUserListContainParam")
+    public AjaxResult getUserListContainParam(UsrListParamDTO usrListParamDTO){
+
+        List<UserEntity> userListContainParam = userService.getUserListContainParam(usrListParamDTO);
+        return AjaxResult.success(userListContainParam);
     }
 }

@@ -1,6 +1,8 @@
 package com.whj.test.demo.service;
 
 import com.whj.test.demo.domain.dto.UserPageResultVO;
+import com.whj.test.demo.domain.dto.UsrListParamDTO;
+import com.whj.test.demo.domain.enity.UserEntity;
 import com.whj.test.demo.domain.vo.UserPageParamDTO;
 
 import java.util.List;
@@ -14,4 +16,8 @@ import java.util.List;
 public interface UserService {
 
     List<UserPageResultVO> selectUserList(UserPageParamDTO userPageParamVO);
+
+    int insertUser(UserEntity user);
+
+    List<UserEntity> getUserListContainParam(UsrListParamDTO usrListParamDTO);
 }
