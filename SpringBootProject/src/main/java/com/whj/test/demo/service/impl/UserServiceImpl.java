@@ -1,13 +1,12 @@
 package com.whj.test.demo.service.impl;
 
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import com.whj.test.demo.domain.dto.UserPageResultVO;
+import com.whj.test.demo.domain.vo.UserPageResultVO;
 import com.whj.test.demo.domain.dto.UsrListParamDTO;
 import com.whj.test.demo.domain.enity.UserEntity;
-import com.whj.test.demo.domain.vo.UserPageParamDTO;
+import com.whj.test.demo.domain.dto.UserPageParamDTO;
 import com.whj.test.demo.mapper.UserMapper;
 import com.whj.test.demo.service.UserService;
 import org.springframework.beans.BeanUtils;

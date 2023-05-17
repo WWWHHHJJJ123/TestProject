@@ -1,10 +1,10 @@
 package com.whj.test.demo.controller;
 
 import com.whj.test.common.AjaxResult;
-import com.whj.test.demo.domain.dto.UserPageResultVO;
+import com.whj.test.demo.domain.vo.UserPageResultVO;
 import com.whj.test.demo.domain.dto.UsrListParamDTO;
 import com.whj.test.demo.domain.enity.UserEntity;
-import com.whj.test.demo.domain.vo.UserPageParamDTO;
+import com.whj.test.demo.domain.dto.UserPageParamDTO;
 import com.whj.test.demo.service.UserService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;

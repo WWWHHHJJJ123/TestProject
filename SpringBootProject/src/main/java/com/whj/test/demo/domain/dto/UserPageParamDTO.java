@@ -1,4 +1,4 @@
-package com.whj.test.demo.domain.vo;
+package com.whj.test.demo.domain.dto;
 
 import lombok.Data;
 

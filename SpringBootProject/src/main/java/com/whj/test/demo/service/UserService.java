@@ -1,9 +1,9 @@
 package com.whj.test.demo.service;
 
-import com.whj.test.demo.domain.dto.UserPageResultVO;
+import com.whj.test.demo.domain.vo.UserPageResultVO;
 import com.whj.test.demo.domain.dto.UsrListParamDTO;
 import com.whj.test.demo.domain.enity.UserEntity;
-import com.whj.test.demo.domain.vo.UserPageParamDTO;
+import com.whj.test.demo.domain.dto.UserPageParamDTO;
 
 import java.util.List;
 
