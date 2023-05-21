@@ -1,3 +1,4 @@
+
 spring:
   application:
     name: springboot_project
@@ -21,4 +22,5 @@ mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
     log-level: trace
-
+server:
+  port: 8816
