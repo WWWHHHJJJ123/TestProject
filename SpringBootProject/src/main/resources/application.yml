@@ -1,4 +1,3 @@
-
 spring:
   application:
     name: springboot_project
@@ -7,6 +6,7 @@ spring:
     url: jdbc:mysql://localhost:3306/whj_database?serverTimezone=GMT%2b8
     username: root
     password: whj123123
+    type: com.alibaba.druid.pool.DruidDataSource
   redis:
     host: localhost
     port: 6379
@@ -24,3 +24,6 @@ mybatis-plus:
     log-level: trace
 server:
   port: 8816
+logging:
+  level:
+    com.whj.test.token: debug
