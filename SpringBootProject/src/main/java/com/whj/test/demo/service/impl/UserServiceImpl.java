@@ -1,6 +1,8 @@
 package com.whj.test.demo.service.impl;
 
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
+import com.baomidou.mybatisplus.extension.service.IService;
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.whj.test.demo.domain.vo.UserPageResultVO;
@@ -24,7 +26,7 @@ import java.util.Objects;
  * @描述
  */
 @Service
-public class UserServiceImpl implements UserService {
+public class UserServiceImpl extends ServiceImpl<UserMapper,UserEntity> implements UserService {
 
 
     @Autowired
@@ -78,6 +80,14 @@ public class UserServiceImpl implements UserService {
         List<UserEntity> userEntities = userMapper.selectList(Wrappers.<UserEntity>lambdaQuery()
                                                                 .like(UserEntity::getName, usrListParamDTO.getParam()));
         return userEntities;
+    }
+
+    @Override
+    public UserEntity getOne(Long id) {
+        UserEntity userEntity = userMapper.selectOne(Wrappers.<UserEntity>lambdaQuery()
+                .eq(UserEntity::getId, id));
+
+        return userEntity;
     }
 
 }

@@ -1,5 +1,6 @@
 package com.whj.test.demo.service;
 
+import com.baomidou.mybatisplus.extension.service.IService;
 import com.whj.test.demo.domain.vo.UserPageResultVO;
 import com.whj.test.demo.domain.dto.UsrListParamDTO;
 import com.whj.test.demo.domain.enity.UserEntity;
@@ -13,11 +14,14 @@ import java.util.List;
  * @描述
  */
 
-public interface UserService {
+public interface UserService extends IService<UserEntity> {
 
     List<UserPageResultVO> selectUserList(UserPageParamDTO userPageParamVO);
 
     int insertUser(UserEntity user);
 
     List<UserEntity> getUserListContainParam(UsrListParamDTO usrListParamDTO);
+
+
+    UserEntity getOne(Long id);
 }

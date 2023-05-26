@@ -9,10 +9,8 @@ import com.whj.test.demo.service.UserService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -28,6 +26,9 @@ public class UserController {
 
     @Autowired
     private UserService userService;
+
+    @Value("${modules.path}")
+    private String path;
 
     @ApiOperation("分页获取user")
     @PostMapping("/userPageInfo")
@@ -57,5 +58,26 @@ public class UserController {
 
         List<UserEntity> userListContainParam = userService.getUserListContainParam(usrListParamDTO);
         return AjaxResult.success(userListContainParam);
+    }
+
+    @ApiOperation("获取一个用户信息((get请求第一种path传参))")
+    @GetMapping("/getOneUser/{id}")
+    public AjaxResult<UserEntity> getOneUser(@PathVariable Long id){
+
+        UserEntity userEntity = userService.getOne(id);
+        return AjaxResult.success("获取成功",userEntity);
+    }
+
+    @ApiOperation("获取路径信息")
+    @GetMapping("/getAddress")
+    public AjaxResult<String> getAddress(){
+        return AjaxResult.success(path);
+    }
+
+    @ApiOperation("获取一个用户信息((get请求第二种path传参))")
+    @GetMapping("/getUserById")
+    public AjaxResult<UserEntity> getUserById(@RequestParam Long id){
+        UserEntity userEntity = userService.getOne(id);
+        return AjaxResult.success(userEntity);
     }
 }
