@@ -27,3 +27,6 @@ server:
 logging:
   level:
     com.whj.test.token: debug
+
+modules:
+  path: http://localhost:9400/
