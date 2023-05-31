@@ -32,8 +32,8 @@ public class UserController {
 
     @ApiOperation("分页获取user")
     @PostMapping("/userPageInfo")
-    public AjaxResult<List<UserPageResultVO>> getUserPageInfo(@RequestBody UserPageParamDTO userPageParamVO){
-        List<UserPageResultVO> userPageResultDTOS = userService.selectUserList(userPageParamVO);
+    public AjaxResult<List<UserPageResultVO>> getUserPageInfo(@RequestBody UserPageParamDTO userPageParamDTO){
+        List<UserPageResultVO> userPageResultDTOS = userService.selectUserList(userPageParamDTO);
         return AjaxResult.success("成功",userPageResultDTOS);
     }
 

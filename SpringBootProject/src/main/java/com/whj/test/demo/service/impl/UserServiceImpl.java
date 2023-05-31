@@ -14,6 +14,8 @@ import com.whj.test.demo.service.UserService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.util.ObjectUtils;
+import org.springframework.util.StringUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,7 +28,7 @@ import java.util.Objects;
  * @描述
  */
 @Service
-public class UserServiceImpl extends ServiceImpl<UserMapper,UserEntity> implements UserService {
+public class UserServiceImpl extends ServiceImpl<UserMapper, UserEntity> implements UserService {
 
 
     @Autowired
@@ -43,15 +45,20 @@ public class UserServiceImpl extends ServiceImpl<UserMapper,UserEntity> implemen
         PageHelper.startPage(userPageParamVO.getPageNum(), userPageParamVO.getPageSize());
 //        List<UserEntity> userList = userMapper.selectList(Wrappers.<UserEntity>lambdaQuery()
 //                .like(UserEntity::getName, userPageParamVO.getParam()));
-        List<UserEntity> userList = userMapper.selectList(null);
+        List<UserEntity> userList = new ArrayList<>();
+        if (!ObjectUtils.isEmpty(userPageParamVO)) {
+            userList = userMapper.selectList(Wrappers.<UserEntity>lambdaQuery()
+                    .like(UserEntity::getName,userPageParamVO.getParam()));
+        } else {
+            userList = userMapper.selectList(null);
+        }
         PageInfo<UserEntity> userEntityPageInfo = new PageInfo<>(userList);
         List<UserEntity> userFilterList = userEntityPageInfo.getList();
-        System.out.println("总数据:"+userEntityPageInfo.getList());
-        System.out.println("分页总页数:"+userEntityPageInfo.getPages());
-        System.out.println("分页页数:"+userEntityPageInfo.getPageNum());
-        System.out.println("分页条数:"+userEntityPageInfo.getPageSize());
-        System.out.println(":"+userEntityPageInfo.getNavigatePages());
-        System.out.println(":"+userEntityPageInfo.getEndRow());
+        System.out.println("总数据:" + userEntityPageInfo.getList());
+        System.out.println("分页总页数:" + userEntityPageInfo.getPages());
+        System.out.println("分页页数:" + userEntityPageInfo.getPageNum());
+        System.out.println("分页条数:" + userEntityPageInfo.getPageSize());
+
 
 
 //        List<UserEntity> records = page.getRecords();
@@ -78,7 +85,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper,UserEntity> implemen
     public List<UserEntity> getUserListContainParam(UsrListParamDTO usrListParamDTO) {
 
         List<UserEntity> userEntities = userMapper.selectList(Wrappers.<UserEntity>lambdaQuery()
-                                                                .like(UserEntity::getName, usrListParamDTO.getParam()));
+                .like(UserEntity::getName, usrListParamDTO.getParam()));
         return userEntities;
     }
 
