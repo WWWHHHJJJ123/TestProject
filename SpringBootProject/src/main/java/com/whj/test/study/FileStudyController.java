@@ -11,10 +11,10 @@ import java.net.URLEncoder;
 /**
  * @创建人 JieSi
  * @创建时间 2023/6/6
- * @描述
+ * @描述  文件上传和下载
  */
 @RestController
-public class StudyController {
+public class FileStudyController {
 
     // 找一个计算机的磁盘位置，比如 D:\\, 我这里使用的是本项目的路径
     private static final String BASE_DIR = "E:\\MyLearnProject\\";
