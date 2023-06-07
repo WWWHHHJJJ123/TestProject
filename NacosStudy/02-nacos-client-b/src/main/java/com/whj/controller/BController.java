@@ -1,6 +1,6 @@
 package com.whj.controller;
 
-import com.whj.common.AjaxResult;
+import com.whj.common.Result;
 import com.whj.domian.entity.User;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -22,23 +22,23 @@ public class BController {
     }
 
     @GetMapping("/getUser")
-    public AjaxResult<User> getUser(){
+    public Result<User> getUser(){
 
         User user = new User();
 
         user.setAge(20);
         user.setName("张三");
         user.setBirthday(LocalDate.now());
-        return AjaxResult.success(user);
+        return Result.success(user);
     }
     @GetMapping("/getUserOther")
-    public AjaxResult<User> getUserOther(){
+    public Result<User> getUserOther(){
         User user = new User();
 
         user.setAge(20);
         user.setName("张三");
         user.setBirthday(LocalDate.now());
-        return AjaxResult.success(user);
+        return Result.success(user);
 
     }
 }

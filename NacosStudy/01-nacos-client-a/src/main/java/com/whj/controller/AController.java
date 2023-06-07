@@ -1,6 +1,6 @@
 package com.whj.controller;
 
-import com.whj.common.AjaxResult;
+import com.whj.common.Result;
 import com.whj.domain.entity.User;
 import com.whj.feign.TestFeign;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,17 +32,17 @@ public class AController {
         return info;
     }
     @GetMapping("/getUser")
-    public AjaxResult getUser(){
+    public Result getUser(){
 
-        AjaxResult user = testFeign.getUser();
-        return AjaxResult.success(user);
+        Result user = testFeign.getUser();
+        return Result.success(user);
     }
 
     @GetMapping("/getUserOther")
-    public AjaxResult<User> getUserOther(){
+    public Result<User> getUserOther(){
 
-        AjaxResult<User> userOther = testFeign.getUserOther();
+        Result<User> userOther = testFeign.getUserOther();
         User user = userOther.getData();
-        return AjaxResult.success(user);
+        return Result.success(user);
     }
 }

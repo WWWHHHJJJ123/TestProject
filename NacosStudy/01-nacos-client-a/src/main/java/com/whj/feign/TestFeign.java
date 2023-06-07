@@ -1,6 +1,6 @@
 package com.whj.feign;
 
-import com.whj.common.AjaxResult;
+import com.whj.common.Result;
 import com.whj.domain.entity.User;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,8 +16,8 @@ public interface TestFeign {
     @GetMapping("/info")
     public String info();
     @GetMapping("/getUser")
-    public AjaxResult getUser();
+    public Result getUser();
 
     @GetMapping("/getUserOther")
-    public AjaxResult<User> getUserOther();
+    public Result<User> getUserOther();
 }
