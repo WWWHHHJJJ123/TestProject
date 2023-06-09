@@ -23,5 +23,5 @@ public interface UserService extends IService<UserEntity> {
     List<UserEntity> getUserListContainParam(UsrListParamDTO usrListParamDTO);
 
 
-    UserEntity getOne(Long id);
+    UserEntity getOneById(Long id);
 }

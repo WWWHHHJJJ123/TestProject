@@ -64,7 +64,7 @@ public class UserController {
     @GetMapping("/getOneUser/{id}")
     public Result<UserEntity> getOneUser(@PathVariable Long id){
 
-        UserEntity userEntity = userService.getOne(id);
+        UserEntity userEntity = userService.getOneById(id);
         return Result.success("获取成功",userEntity);
     }
 
@@ -77,7 +77,7 @@ public class UserController {
     @ApiOperation("获取一个用户信息((get请求第二种path传参))")
     @GetMapping("/getUserById")
     public Result<UserEntity> getUserById(@RequestParam Long id){
-        UserEntity userEntity = userService.getOne(id);
+        UserEntity userEntity = userService.getOneById(id);
         return Result.success(userEntity);
     }
 }

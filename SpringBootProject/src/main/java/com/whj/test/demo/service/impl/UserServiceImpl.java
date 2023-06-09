@@ -90,7 +90,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, UserEntity> impleme
     }
 
     @Override
-    public UserEntity getOne(Long id) {
+    public UserEntity getOneById(Long id) {
         UserEntity userEntity = userMapper.selectOne(Wrappers.<UserEntity>lambdaQuery()
                 .eq(UserEntity::getId, id));
 
