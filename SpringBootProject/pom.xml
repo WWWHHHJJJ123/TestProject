@@ -108,17 +108,17 @@
             <version>1.2.15</version>
         </dependency>
         <!--        xls 03-->
-<!--        <dependency>-->
-<!--            <groupId>org.apache.poi</groupId>-->
-<!--            <artifactId>poi</artifactId>-->
-<!--            <version>3.17</version>-->
-<!--        </dependency>-->
-<!--        &lt;!&ndash;        xls 07&ndash;&gt;-->
-<!--        <dependency>-->
-<!--            <groupId>org.apache.poi</groupId>-->
-<!--            <artifactId>poi-ooxml</artifactId>-->
-<!--            <version>3.17</version>-->
-<!--        </dependency>-->
+        <!--        <dependency>-->
+        <!--            <groupId>org.apache.poi</groupId>-->
+        <!--            <artifactId>poi</artifactId>-->
+        <!--            <version>3.17</version>-->
+        <!--        </dependency>-->
+        <!--        &lt;!&ndash;        xls 07&ndash;&gt;-->
+        <!--        <dependency>-->
+        <!--            <groupId>org.apache.poi</groupId>-->
+        <!--            <artifactId>poi-ooxml</artifactId>-->
+        <!--            <version>3.17</version>-->
+        <!--        </dependency>-->
         <!--        日期格式化工具-->
         <dependency>
             <groupId>joda-time</groupId>
@@ -131,6 +131,24 @@
             <artifactId>easyexcel</artifactId>
             <version>2.1.6</version>
         </dependency>
+        <dependency>
+            <groupId>com.alibaba.fastjson2</groupId>
+            <artifactId>fastjson2</artifactId>
+            <version>2.0.19</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.83</version>
+        </dependency>
+        <!-- hutool工具类       -->
+
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-core</artifactId>
+            <version>5.8.19</version>
+        </dependency>
+
     </dependencies>
 
     <build>

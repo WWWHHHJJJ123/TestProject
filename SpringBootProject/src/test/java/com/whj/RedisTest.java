@@ -1,5 +1,7 @@
 package com.whj;
 
+import cn.hutool.core.util.RandomUtil;
+import com.alibaba.fastjson2.JSONObject;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -60,13 +62,13 @@ public class RedisTest {
         //获得hash结构中的所有字段
         Set keys = hashOperations.keys("002");
         for (Object key : keys) {
-            System.out.println("字段:"+key);
+            System.out.println("字段:" + key);
         }
         System.out.println("===============");
         //获得hash结构中的所有值
         List values = hashOperations.values("002");
         for (Object value : values) {
-            System.out.println("字段值:"+value);
+            System.out.println("字段值:" + value);
         }
 
         Object name = redisTemplate.boundHashOps("002").get("name");
@@ -86,7 +88,7 @@ public class RedisTest {
         /**
          * set类型的数据不可重复
          */
-        setOperations.add("myset", "a", "b", "c", "a","a", "b", "c", "a","d","b","m","t");
+        setOperations.add("myset", "a", "b", "c", "a", "a", "b", "c", "a", "d", "b", "m", "t");
 
         //取值
         Set<String> myset = setOperations.members("myset");
@@ -141,11 +143,12 @@ public class RedisTest {
             System.out.println("myZset:" + s);
         }
     }
+
     /**
      * 通用操作，针对不同的数据类型都可以操作
      */
     @Test
-    public void testCommon(){
+    public void testCommon() {
         //获取Redis中所有的key
         Set<String> keys = redisTemplate.keys("*");
         for (String key : keys) {
