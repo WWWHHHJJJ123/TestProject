@@ -8,6 +8,7 @@ import com.whj.test.demo.domain.dto.UserPageParamDTO;
 import com.whj.test.demo.service.UserService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
@@ -19,6 +20,7 @@ import java.util.List;
  * @创建时间 2023/5/8
  * @描述
  */
+@Slf4j
 @Api("测试代码")
 @RestController
 @RequestMapping("/test")
@@ -39,6 +41,8 @@ public class UserController {
 
     @RequestMapping("/hello")
     public String hello(){
+
+        log.info("输出路径"+path);
         return "hello";
     }
 
