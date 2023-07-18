@@ -1,5 +1,7 @@
 package com.whj.study;
 
+import java.util.Arrays;
+
 /**
  * @创建人 JieSi
  * @创建时间 2023/6/6
@@ -8,10 +10,8 @@ package com.whj.study;
 public class StringTest {
 
     public static void main(String[] args) {
-        String str="dadassdvjjjfmmf.ccc";
-        System.out.println(str.lastIndexOf("."));
-        System.out.println(str.substring(15));
-        String substring = str.substring(str.lastIndexOf("."));
-        System.out.println(substring);
+        int[] arry1={1,2,3,4,5};
+        Arrays.copyOf(arry1,20);
+
     }
 }

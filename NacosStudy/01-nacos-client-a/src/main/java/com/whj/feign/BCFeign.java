@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.GetMapping;
  * @描述
  */
 @FeignClient(value = "user-service")
-public interface TestFeign {
+public interface BCFeign {
 
     @GetMapping("/info")
     public String info();
