@@ -2,7 +2,7 @@ package com.whj.controller;
 
 import com.whj.common.Result;
 import com.whj.domain.entity.User;
-import com.whj.feign.TestFeign;
+import com.whj.feign.BCFeign;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
@@ -22,26 +22,26 @@ public class AController {
     private DiscoveryClient discoveryClient;
 
     @Autowired
-    private TestFeign testFeign;
+    private BCFeign bcFeign;
 
     @GetMapping("/test")
     public String test(){
         List<ServiceInstance> instances = discoveryClient.getInstances("user-service");
         System.out.println(instances);
-        String info = testFeign.info();
+        String info = bcFeign.info();
         return info;
     }
     @GetMapping("/getUser")
     public Result getUser(){
 
-        Result user = testFeign.getUser();
+        Result user = bcFeign.getUser();
         return Result.success(user);
     }
 
     @GetMapping("/getUserOther")
     public Result<User> getUserOther(){
 
-        Result<User> userOther = testFeign.getUserOther();
+        Result<User> userOther = bcFeign.getUserOther();
         User user = userOther.getData();
         return Result.success(user);
     }

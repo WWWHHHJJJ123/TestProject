@@ -1,4 +1,4 @@
-package com.whj.test.demo.domain.enity;
+package com.whj.singleton;
 
 /**
  * @创建人 JieSi
