@@ -169,4 +169,8 @@ public class RedisTest {
     }
 
 
+    @Test
+    public void testSql(){
+
+    }
 }

@@ -13,7 +13,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @创建人 JieSi
@@ -83,5 +86,26 @@ public class UserController {
     public Result<UserEntity> getUserById(@RequestParam Long id){
         UserEntity userEntity = userService.getOneById(id);
         return Result.success(userEntity);
+    }
+
+    @GetMapping("/getObjectMap")
+    public Result<List<Map<String,UserEntity>>> getObjectMap(){
+
+
+        List<Map<String,UserEntity>> mapList=new ArrayList<>();
+        Map<String,UserEntity> map1=new HashMap<>();
+        map1.put("zhangsan",new UserEntity(1L,"张三",20,"www.zhangsan.com"));
+        map1.put("lisi",new UserEntity(2L,"李四",20,"www.lisi.com"));
+        map1.put("wangwu",new UserEntity(3L,"王五",20,"www.wangwu.com"));
+        map1.put("zhaoliu",new UserEntity(4L,"赵六",20,"www.zhaoliu.com"));
+        mapList.add(map1);
+        Map<String,UserEntity> map2=new HashMap<>();
+        map2.put("zhangsan",new UserEntity(1L,"张三",20,"www.zhangsan.com"));
+        map2.put("lisi",new UserEntity(2L,"李四",20,"www.lisi.com"));
+        map2.put("wangwu",new UserEntity(3L,"王五",20,"www.wangwu.com"));
+        map2.put("zhaoliu",new UserEntity(4L,"赵六",20,"www.zhaoliu.com"));
+        mapList.add(map2);
+
+        return Result.success(mapList);
     }
 }
