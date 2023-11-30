@@ -3,9 +3,12 @@ package com.whj.excel.easyexcle;
 import com.alibaba.excel.EasyExcel;
 import com.whj.excel.easyexcle.common.ExcelFillCellMergeStrategy;
 import com.whj.excel.easyexcle.domain.DemoMergeData;
+import com.whj.excel.easyexcle.domain.ZHDataVO;
 import org.junit.jupiter.api.Test;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.lang.reflect.Field;
 import java.util.ArrayList;
@@ -102,7 +105,7 @@ public class TestAlibabaEasyExcel {
         List<Integer> mergeColumnIndex = new ArrayList<>();
         Field[] declaredFields = Class.forName("com.whj.excel.easyexcle.domain.DemoMergeData").getDeclaredFields();
         for (int i = 0; i < declaredFields.length; i++) {
-            if (declaredFields[i].getName().equals("sub")||declaredFields[i].getName().equals("date")){
+            if (declaredFields[i].getName().equals("sub") || declaredFields[i].getName().equals("date")) {
                 mergeColumnIndex.add(i);
             }
         }
@@ -115,4 +118,10 @@ public class TestAlibabaEasyExcel {
     }
 
 
+    @Test
+    public void testZh() throws Exception {
+        FileInputStream fis = new FileInputStream("C:\\Users\\asus\\Desktop\\紫涵2.0档案字段+预定义.xlsx");
+        List<ZHDataVO> objects = EasyExcel.read(fis, ZHDataVO.class, null).headRowNumber(1).sheet("成衣分类").doReadSync();
+        System.out.println(objects);
+    }
 }
