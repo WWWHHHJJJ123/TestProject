@@ -4,6 +4,8 @@ import com.whj.test.excel.domain.entity.AmsCategoryEntity;
 import com.baomidou.mybatisplus.extension.service.IService;
 import org.springframework.web.multipart.MultipartFile;
 
+import java.io.IOException;
+
 /**
  * <p>
  *  服务类
@@ -14,5 +16,5 @@ import org.springframework.web.multipart.MultipartFile;
  */
 public interface IAmsCategoryService extends IService<AmsCategoryEntity> {
 
-    void importExcel(MultipartFile file);
+    void importExcel(MultipartFile file) throws IOException;
 }
