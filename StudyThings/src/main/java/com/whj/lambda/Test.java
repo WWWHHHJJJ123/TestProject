@@ -27,4 +27,6 @@ public class Test {
     interface Cal {
         int add(int a, int b);
     }
+
+
 }

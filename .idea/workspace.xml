@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1e280452-75da-41d0-ba95-8ccc2ad66e92" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/1/319aa6333ec8cd7537609b14d750d4d62f002851" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/5/358682d85bc7e4438a30142aae249ee9e2a4993a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/e/7e3b96fce65e9b1d2cf0ddef42ef073be9c3e577" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/1/81c89c3aec5d53f2d70ed115ecf7a13cee493289" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/8/f82e4b8c8e856e153cc5b636f9ba0bb6f4c75d83" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/1/319aa6333ec8cd7537609b14d750d4d62f002851" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/5/358682d85bc7e4438a30142aae249ee9e2a4993a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/7/e/7e3b96fce65e9b1d2cf0ddef42ef073be9c3e577" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/1/81c89c3aec5d53f2d70ed115ecf7a13cee493289" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/f/8/f82e4b8c8e856e153cc5b636f9ba0bb6f4c75d83" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NacosStudy/NacosStudy.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudyThings/StudyThings.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/TestProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TestProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/StudyThings_ear_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/StudyThings_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/test/amsArchives/controller/ArchivesController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/test/amsArchives/dao/AmsArchivesNewDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/test/amsArchives/dateListener/ArchivesListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/test/amsArchives/domain/dto/ExcelImportDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/test/amsArchives/domain/entity/AmsArchivesNewEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/test/amsArchives/domain/entity/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/test/amsArchives/service/ArchivesService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/test/amsArchives/service/impl/ArchivesServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/test/demo/controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/test/demo/domain/dto/UserPageParamDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/test/demo/domain/dto/UsrListParamDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/test/demo/domain/enity/UserEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/test/demo/domain/vo/UserPageResultVO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/test/demo/mapper/UserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/test/demo/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/test/demo/service/impl/UserServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/test/easyexcel/EasyExcelReadDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/test/easyexcel/EasyExcelWriteDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/test/easyexcel/dao/DemoDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/test/easyexcel/domain/DemoData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/test/easyexcel/listener/DemoDataListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/test/excel/controller/AmsCategoryController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/test/excel/dao/AmsCategoryDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/test/excel/domain/entity/AmsCategoryEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/test/excel/domain/vo/ZHDataVO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/test/excel/service/IAmsCategoryService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/test/excel/service/impl/AmsCategoryServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/test/filestudy/FileStudyController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/test/redis/RedisConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/test/redis/domain/pojo/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/StudyThings/src/main/java/com/whj/lambda/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/StudyThings/src/main/java/com/whj/lambda/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StudyThings/target/classes/com/whj/excel/poi/ExcelWriteTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/StudyThings/target/classes/com/whj/excel/poi/ExcelWriteTest.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="E:\Maven\localRepository" />
+        <option name="userSettingsFile" value="E:\Maven\apache-maven-3.9.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2ai6JaKWhUjRLHigwTy87zqmMUX" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "JUnit.ExcelWriteTest.testExcel.executor": "Run",
+    "JUnit.ExcelWriteTest.testWrite07.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.SpringBootProjectApplication.executor": "Run",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "editor.preferences.tabs",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Application.MyBatisPlusCodeGenerator">
+    <configuration name="MyBatisPlusCodeGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.whj.generator.MyBatisPlusCodeGenerator" />
+      <module name="SpringBootProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.whj.generator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExcelWriteTest.testExcel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="StudyThings" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.whj.excel.poi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.whj.excel.poi" />
+      <option name="MAIN_CLASS_NAME" value="com.whj.excel.poi.ExcelWriteTest" />
+      <option name="METHOD_NAME" value="testExcel" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExcelWriteTest.testWrite07" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="StudyThings" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.whj.excel.poi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.whj.excel.poi" />
+      <option name="MAIN_CLASS_NAME" value="com.whj.excel.poi.ExcelWriteTest" />
+      <option name="METHOD_NAME" value="testWrite07" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBootProjectApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="SpringBootProject" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.whj.SpringBootProjectApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MyBatisPlusCodeGenerator" />
+        <item itemvalue="JUnit.ExcelWriteTest.testExcel" />
+        <item itemvalue="JUnit.ExcelWriteTest.testWrite07" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-1.8.0_392-corretto-1.8.0_392-f644763e9732-f719d367" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1e280452-75da-41d0-ba95-8ccc2ad66e92" name="Changes" comment="" />
+      <created>1704788981862</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1704788981862</updated>
+      <workItem from="1704788983945" duration="224000" />
+      <workItem from="1704789216166" duration="144000" />
+      <workItem from="1704790497875" duration="2000" />
+      <workItem from="1704790511992" duration="8000" />
+      <workItem from="1705311491016" duration="1117000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

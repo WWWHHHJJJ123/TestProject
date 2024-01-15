@@ -1,0 +1,38 @@
+
+`	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(¥Î÷Äıÿÿÿÿ
+`	java:S112?"FDefine and throw a dedicated exception instead of using a generic one.(ùË¿Šıÿÿÿÿ
+[	java:S112_"FDefine and throw a dedicated exception instead of using a generic one.(İïò‚
+[	java:S112¾"FDefine and throw a dedicated exception instead of using a generic one.(Š®‘
+a	java:S112×"FDefine and throw a dedicated exception instead of using a generic one.(Ø§Şìúÿÿÿÿ
+\	java:S112ğ"FDefine and throw a dedicated exception instead of using a generic one.(÷¶
+›
+java:S1192Ë"ƒDefine a constant instead of duplicating this literal "https://wx1.sinaimg.cn/orj360/007Ryzjmgy1hkaistvwimj30jg0jg41l.jpg" 3 times.(Øßó
+e
+java:S2095A"JUse try-with-resources or close this "XSSFWorkbook" in a "finally" clause.(˜„°ÿÿÿÿÿ
+a
+java:S2095Â"JUse try-with-resources or close this "HSSFWorkbook" in a "finally" clause.(ŸŞÏ÷
+f
+java:S2095Û"JUse try-with-resources or close this "XSSFWorkbook" in a "finally" clause.(˜„°ÿÿÿÿÿ
+b
+java:S2095ô"KUse try-with-resources or close this "SXSSFWorkbook" in a "finally" clause.(¯©¢÷
+e
+java:S2095a"JUse try-with-resources or close this "XSSFWorkbook" in a "finally" clause.(˜„°ÿÿÿÿÿ
+f
+java:S2095˜"JUse try-with-resources or close this "XSSFWorkbook" in a "finally" clause.(˜„°ÿÿÿÿÿ
+`
+java:S2095!"JUse try-with-resources or close this "HSSFWorkbook" in a "finally" clause.(ŸŞÏ÷
+d	java:S116"ORename this field "PATH" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€Ô©Õ
+W
+java:S1075"ARefactor your code to get this URI from a customizable parameter.(€Ô©Õ
+?	java:S106:"+Replace this use of System.out by a logger.(¨şĞ4
+?	java:S106Z"+Replace this use of System.out by a logger.(¨şĞ4
+A	java:S106Î"+Replace this use of System.out by a logger.(æØã
+A	java:S106Ó"+Replace this use of System.out by a logger.(’«Öõ
+A	java:S106ç"+Replace this use of System.out by a logger.(æØã
+A	java:S106ì"+Replace this use of System.out by a logger.(’«Öõ
+A	java:S106€"+Replace this use of System.out by a logger.(æØã
+A	java:S106‡"+Replace this use of System.out by a logger.(’«Öõ
+d
+java:S1128"IRemove this unused import 'com.sun.corba.se.spi.orbutil.threadpool.Work'.(¥¸™Šüÿÿÿÿ
+d
+java:S1128"IRemove this unused import 'com.sun.org.apache.bcel.internal.generic.NEW'.(èú¨Óşÿÿÿÿ

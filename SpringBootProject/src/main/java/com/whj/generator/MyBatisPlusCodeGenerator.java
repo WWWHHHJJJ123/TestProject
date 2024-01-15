@@ -35,7 +35,7 @@ public class MyBatisPlusCodeGenerator {
         //生成实体表名配置
         // *********************修改表名***********************
         String[] tables = new String[]{
-                "ams_category"
+                "tree"
         };
         System.out.println("===================开始生成代码========================");
         run(moduleName, author, url, username, password, tables);
@@ -59,7 +59,7 @@ public class MyBatisPlusCodeGenerator {
                 // 包配置
                 .packageConfig(builder -> {
                     //************************修改代码父包名(最后一级)**************************
-                    builder.parent("com.whj.test.excel")     // 父包名
+                    builder.parent("com.whj.common_structures")     // 父包名
                             .entity("domain.entity")                 // Entity 包名
                             .service("service")             //	Service 包名
                             .serviceImpl("service.impl")    // Service Impl 包名
@@ -68,7 +68,7 @@ public class MyBatisPlusCodeGenerator {
                             .controller("controller")       // Controller 包名
                             .other("config")                // 自定义文件包名	输出自定义文件时所用到的包名
                             //****************************修改xml文件路径(最后一级)********************************
-                            .pathInfo(Collections.singletonMap(OutputFile.mapperXml, System.getProperty("user.dir") + File.separator + moduleName + "\\src\\main\\resources\\mapper\\whj"));// 指定xml位置
+                            .pathInfo(Collections.singletonMap(OutputFile.mapperXml, System.getProperty("user.dir") + File.separator + moduleName + "\\src\\main\\resources\\mapper"));// 指定xml位置
                 })
                 // 策略配置
                 .strategyConfig(builder -> {
