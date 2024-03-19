@@ -5,62 +5,60 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e280452-75da-41d0-ba95-8ccc2ad66e92" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/1/319aa6333ec8cd7537609b14d750d4d62f002851" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/5/358682d85bc7e4438a30142aae249ee9e2a4993a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/e/7e3b96fce65e9b1d2cf0ddef42ef073be9c3e577" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/1/81c89c3aec5d53f2d70ed115ecf7a13cee493289" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/8/f82e4b8c8e856e153cc5b636f9ba0bb6f4c75d83" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/1/319aa6333ec8cd7537609b14d750d4d62f002851" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/5/358682d85bc7e4438a30142aae249ee9e2a4993a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/7/e/7e3b96fce65e9b1d2cf0ddef42ef073be9c3e577" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/1/81c89c3aec5d53f2d70ed115ecf7a13cee493289" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/f/8/f82e4b8c8e856e153cc5b636f9ba0bb6f4c75d83" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NacosStudy/NacosStudy.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StudyThings/StudyThings.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/TestProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TestProject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/StudyThings_ear_exploded.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/StudyThings_war_exploded.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/test/amsArchives/controller/ArchivesController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/test/amsArchives/dao/AmsArchivesNewDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/test/amsArchives/dateListener/ArchivesListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/test/amsArchives/domain/dto/ExcelImportDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/test/amsArchives/domain/entity/AmsArchivesNewEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/test/amsArchives/domain/entity/Student.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/test/amsArchives/service/ArchivesService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/test/amsArchives/service/impl/ArchivesServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/test/demo/controller/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/test/demo/domain/dto/UserPageParamDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/test/demo/domain/dto/UsrListParamDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/test/demo/domain/enity/UserEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/test/demo/domain/vo/UserPageResultVO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/test/demo/mapper/UserMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/test/demo/service/UserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/test/demo/service/impl/UserServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/test/easyexcel/EasyExcelReadDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/test/easyexcel/EasyExcelWriteDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/test/easyexcel/dao/DemoDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/test/easyexcel/domain/DemoData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/test/easyexcel/listener/DemoDataListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/test/excel/controller/AmsCategoryController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/test/excel/dao/AmsCategoryDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/test/excel/domain/entity/AmsCategoryEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/test/excel/domain/vo/ZHDataVO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/test/excel/service/IAmsCategoryService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/test/excel/service/impl/AmsCategoryServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/test/filestudy/FileStudyController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/test/redis/RedisConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/test/redis/domain/pojo/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/StudyThings/src/main/java/com/whj/lambda/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/StudyThings/src/main/java/com/whj/lambda/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StudyThings/target/classes/com/whj/excel/poi/ExcelWriteTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/StudyThings/target/classes/com/whj/excel/poi/ExcelWriteTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/8/18689060b9305f5c045ee08869684a995f52d559" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/f/2f976b8557cc18f50bb8d3c56e9f3ba3d1e746bc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/5/358f786ff5945f85b3048dce893ae1dea381af34" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/5/45d033a6872543a0df04d8c7dcbd090f3bb8f6de" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/f/4f384e55a0951fc43f8b8ea81ffe6fa99563f715" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/7/67abc5a754ba077b5b241553d840cc472d150215" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/9/79abcd1a542c29bd15a3ac289af6ed704775b0aa" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/2/82b6cbbb079a0215209bf6f1decfaa46d6ce89c3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/4/945309d237794d5f9de01c24409cc55f3c4b7d7b" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/1/a19bdd2ac8e26e056c4729faf11b6e823fb3fb8d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/8/c8f9b85c75170a2d3550baf5cdb1f02bb1ff4394" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/d/cd2f86030cfbc300e384dede514a35ffce286a66" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/d/cdd45b81551d2e02d168ba1a3eabeedc7cd956f3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/6/e621f7aff10545fbd3a985237317c10eea362a17" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/1/8/18689060b9305f5c045ee08869684a995f52d559" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/f/2f976b8557cc18f50bb8d3c56e9f3ba3d1e746bc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/5/358f786ff5945f85b3048dce893ae1dea381af34" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/5/45d033a6872543a0df04d8c7dcbd090f3bb8f6de" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/f/4f384e55a0951fc43f8b8ea81ffe6fa99563f715" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/6/7/67abc5a754ba077b5b241553d840cc472d150215" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/7/9/79abcd1a542c29bd15a3ac289af6ed704775b0aa" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/2/82b6cbbb079a0215209bf6f1decfaa46d6ce89c3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/9/4/945309d237794d5f9de01c24409cc55f3c4b7d7b" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/a/1/a19bdd2ac8e26e056c4729faf11b6e823fb3fb8d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/8/c8f9b85c75170a2d3550baf5cdb1f02bb1ff4394" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/d/cd2f86030cfbc300e384dede514a35ffce286a66" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/d/cdd45b81551d2e02d168ba1a3eabeedc7cd956f3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/6/e621f7aff10545fbd3a985237317c10eea362a17" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Desined/Desined.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Desined/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Desined/src/com/whj/designed/principle/openclose/Human.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Desined/src/com/whj/designed/principle/openclose/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/common_structures/config/MybatisPlusConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/common_structures/domain/TreeNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/common_structures/domain/dto/StudentsPageDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/common_structures/domain/vo/StudentsPageVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/common_structures/util/TreeBuild.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudyThings/src/main/java/com/whj/comm_structure/BinarySearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/2/622bf67163999e4d0415fb43b0d17249b3479903" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/2/622bf67163999e4d0415fb43b0d17249b3479903" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/6/a62ed5ccfb76850c1b56dc59c7c2678dff65385b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/a/6/a62ed5ccfb76850c1b56dc59c7c2678dff65385b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyExcel/src/main/java/com/whj/demo/DemoDataListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/EasyExcel/src/main/java/com/whj/demo/DemoDataListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/SpringBootProjectApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/SpringBootProjectApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/common_structures/controller/TreeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/common_structures/controller/TreeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/common_structures/dao/TreeDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/common_structures/domain/entity/TreeEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/common_structures/service/ITreeService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/common_structures/service/impl/TreeServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/generator/MyBatisPlusCodeGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBootProject/src/main/java/com/whj/generator/MyBatisPlusCodeGenerator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,12 +68,16 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -90,33 +92,85 @@
 }</component>
   <component name="ProjectId" id="2ai6JaKWhUjRLHigwTy87zqmMUX" />
   <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.BinarySearch.executor": "Run",
+    "Application.Human.executor": "Debug",
+    "Application.Main.executor": "Run",
+    "Application.MyBatisPlusCodeGenerator.executor": "Run",
+    "Application.TreeController.executor": "Run",
     "JUnit.ExcelWriteTest.testExcel.executor": "Run",
     "JUnit.ExcelWriteTest.testWrite07.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.SpringBootProjectApplication.executor": "Run",
     "git-widget-placeholder": "master",
+    "jdk.selected.JAVA_MODULE": "1.8",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "E:/yeb/yeb-order-center",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "editor.preferences.tabs",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.MyBatisPlusCodeGenerator">
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.whj.designed.principle.openclose" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.TreeController">
+    <configuration name="BinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.whj.comm_structure.BinarySearch" />
+      <module name="StudyThings" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.whj.comm_structure.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Human" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.whj.designed.principle.openclose.Human" />
+      <module name="Desined" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.whj.designed.principle.openclose.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Desined" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MyBatisPlusCodeGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.whj.generator.MyBatisPlusCodeGenerator" />
       <module name="SpringBootProject" />
@@ -130,34 +184,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExcelWriteTest.testExcel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="StudyThings" />
+    <configuration name="TreeController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.whj.common_structures.controller.TreeController" />
+      <module name="SpringBootProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.whj.excel.poi.*" />
+          <option name="PATTERN" value="com.whj.common_structures.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.whj.excel.poi" />
-      <option name="MAIN_CLASS_NAME" value="com.whj.excel.poi.ExcelWriteTest" />
-      <option name="METHOD_NAME" value="testExcel" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ExcelWriteTest.testWrite07" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="StudyThings" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.whj.excel.poi.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.whj.excel.poi" />
-      <option name="MAIN_CLASS_NAME" value="com.whj.excel.poi.ExcelWriteTest" />
-      <option name="METHOD_NAME" value="testWrite07" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -171,9 +206,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TreeController" />
         <item itemvalue="Application.MyBatisPlusCodeGenerator" />
-        <item itemvalue="JUnit.ExcelWriteTest.testExcel" />
-        <item itemvalue="JUnit.ExcelWriteTest.testWrite07" />
+        <item itemvalue="Application.BinarySearch" />
+        <item itemvalue="Application.Human" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -196,7 +233,23 @@
       <workItem from="1704789216166" duration="144000" />
       <workItem from="1704790497875" duration="2000" />
       <workItem from="1704790511992" duration="8000" />
-      <workItem from="1705311491016" duration="1117000" />
+      <workItem from="1705311491016" duration="4403000" />
+      <workItem from="1708591387195" duration="1734000" />
+      <workItem from="1708682481542" duration="101000" />
+      <workItem from="1708914187070" duration="98000" />
+      <workItem from="1709453697436" duration="144000" />
+      <workItem from="1709625179514" duration="6394000" />
+      <workItem from="1709717725036" duration="1772000" />
+      <workItem from="1709792833524" duration="8297000" />
+      <workItem from="1710573155997" duration="3818000" />
+      <workItem from="1710727273428" duration="1309000" />
+      <workItem from="1710730529073" duration="891000" />
+      <workItem from="1710732127020" duration="88000" />
+      <workItem from="1710732952772" duration="20000" />
+      <workItem from="1710733024172" duration="254000" />
+      <workItem from="1710740788395" duration="21000" />
+      <workItem from="1710751118598" duration="935000" />
+      <workItem from="1710810063918" duration="733000" />
     </task>
     <servers />
   </component>

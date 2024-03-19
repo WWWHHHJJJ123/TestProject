@@ -1,0 +1,19 @@
+
+K
+java:S3740$"/Provide the parametrized type for this generic.(Ήª΄8ύπªε1
+L
+java:S37408"/Provide the parametrized type for this generic.(Ω΄Υ8ύπªε1
+L
+java:S3740="/Provide the parametrized type for this generic.(£Μ΅“8ύπªε1
+Q
+java:S3740C"/Provide the parametrized type for this generic.(ηΧ’ψÿÿÿÿ8ύπªε1
+L	java:S106>"+Replace this use of System.out by a logger.(…¥ΐωϊÿÿÿÿ8µύπªε1
+G	java:S106D"+Replace this use of System.out by a logger.(­ηυΥ8·ύπªε1
+S
+java:S1128	"6Remove this unused import 'io.swagger.models.auth.In'.(ε£Ωσ8»ύπªε1
+P
+java:S1128".Remove this unused import 'java.util.HashMap'.(™”€ωÿÿÿÿ8χετªε1
+L
+java:S1128"*Remove this unused import 'java.util.Map'.(Όθ½Òώÿÿÿÿ8χετªε1
+Z
+java:S1128"8Remove this unused import 'java.util.stream.Collectors'.(ΣσΊ΄ϊÿÿÿÿ8»ύπªε1

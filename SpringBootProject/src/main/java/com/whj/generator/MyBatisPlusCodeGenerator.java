@@ -35,7 +35,7 @@ public class MyBatisPlusCodeGenerator {
         //生成实体表名配置
         // *********************修改表名***********************
         String[] tables = new String[]{
-                "tree"
+                "student"
         };
         System.out.println("===================开始生成代码========================");
         run(moduleName, author, url, username, password, tables);

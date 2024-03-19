@@ -10,7 +10,7 @@ import org.apache.ibatis.annotations.Mapper;
  * </p>
  *
  * @author whj
- * @since 2024-01-15 17:58:06
+ * @since 2024-01-15 19:55:09
  */
 @Mapper
 public interface TreeDao extends BaseMapper<TreeEntity> {
