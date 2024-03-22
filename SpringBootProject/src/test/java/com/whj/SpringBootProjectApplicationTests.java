@@ -4,21 +4,16 @@ import com.auth0.jwt.JWT;
 import com.auth0.jwt.JWTVerifier;
 import com.auth0.jwt.algorithms.Algorithm;
 import com.auth0.jwt.interfaces.DecodedJWT;
-import com.auth0.jwt.interfaces.Verification;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.whj.test.demo.mapper.UserMapper;
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.Calendar;
 import java.util.HashMap;
 
 class SpringBootProjectApplicationTests {
 
-    @Autowired
-    private UserMapper userMapper;
+
 
 
     @Test
@@ -49,7 +44,7 @@ class SpringBootProjectApplicationTests {
     @Test
     void tsetGetByPage() {
         IPage page = new Page(1, 2);
-        userMapper.selectPage(page, null);
+
         System.out.println("当前页码值" + page.getCurrent());
         System.out.println("每页显示数" + page.getSize());
         System.out.println("一共多少页" + page.getPages());

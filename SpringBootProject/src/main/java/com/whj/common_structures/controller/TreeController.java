@@ -2,18 +2,13 @@ package com.whj.common_structures.controller;
 
 
 import com.whj.common_structures.domain.TreeNode;
-
 import com.whj.common_structures.domain.entity.TreeEntity;
 import com.whj.common_structures.util.TreeBuild;
 import com.whj.test.common.Result;
-import io.swagger.models.auth.In;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.stream.Collectors;
+import java.math.BigDecimal;
+import java.util.*;
 
 /**
  * <p>
@@ -30,6 +25,7 @@ public class TreeController {
 
     /**
      * 案例构造一棵树，其余的可共用
+     *
      * @return
      */
     @GetMapping("/data")
@@ -69,5 +65,13 @@ public class TreeController {
         return Result.success(treeEntity);
     }
 
+    public static void main(String[] args) {
+        Map<String,String> map=new HashMap<>();
+        map.put("1","1");
+        map.put("2","2");
+        map.put("4","3");
+        System.out.println(map.getOrDefault("333", "不存在"));
+        System.out.println(map.getOrDefault("1", "不存在"));
+    }
 }
 
