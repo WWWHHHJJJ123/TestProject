@@ -1,6 +1,6 @@
-package com.whj.common_structures.service;
+package com.whj.local_test.service;
 
-import com.whj.common_structures.domain.entity.StudentEntity;
+import com.whj.local_test.domain.entity.StudentEntity;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**

@@ -1,7 +1,11 @@
-package com.whj.common_structures.service;
+package com.whj.local_test.service;
 
-import com.whj.common_structures.domain.entity.TreeEntity;
+import com.whj.local_test.domain.dto.TreePageDTO;
+import com.whj.local_test.domain.entity.TreeEntity;
 import com.baomidou.mybatisplus.extension.service.IService;
+
+import javax.servlet.http.HttpServletResponse;
+import java.util.List;
 
 /**
  * <p>
@@ -13,4 +17,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface ITreeService extends IService<TreeEntity> {
 
+    List<TreeEntity> list(TreePageDTO dto);
+
+    void export(TreePageDTO dto, HttpServletResponse response);
 }

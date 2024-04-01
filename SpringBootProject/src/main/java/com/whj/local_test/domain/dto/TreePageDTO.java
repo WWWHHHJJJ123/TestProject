@@ -4,7 +4,7 @@ package com.whj.local_test.domain.dto;
 import lombok.Data;
 
 @Data
-public class StudentsPageDTO {
-    private Integer pageSize;
-    private Integer pageNum;
+public class TreePageDTO {
+    private int pageSize;
+    private int pageNum;
 }

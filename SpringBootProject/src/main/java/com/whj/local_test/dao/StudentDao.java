@@ -1,6 +1,6 @@
-package com.whj.common_structures.dao;
+package com.whj.local_test.dao;
 
-import com.whj.common_structures.domain.entity.StudentEntity;
+import com.whj.local_test.domain.entity.StudentEntity;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
 

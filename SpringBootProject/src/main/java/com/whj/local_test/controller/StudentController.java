@@ -1,13 +1,14 @@
-package com.whj.common_structures.controller;
+package com.whj.local_test.controller;
 
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.core.toolkit.StringUtils;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.whj.common_structures.dao.StudentDao;
-import com.whj.common_structures.domain.dto.StudentsPageDTO;
-import com.whj.common_structures.domain.vo.StudentsPageVO;
-import com.whj.common_structures.domain.entity.StudentEntity;
+import com.whj.local_test.dao.StudentDao;
+import com.whj.local_test.domain.dto.StudentsPageDTO;
+import com.whj.local_test.domain.vo.StudentsPageVO;
+import com.whj.local_test.domain.entity.StudentEntity;
 import com.whj.test.common.Result;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,6 +17,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
+import java.util.Objects;
 
 /**
  * <p>
@@ -42,7 +44,10 @@ public class StudentController {
     public Result<StudentsPageVO> pageStudents(StudentsPageDTO dto) {
         StudentsPageVO vo = new StudentsPageVO();
         IPage<StudentEntity> iPage=new Page<>(dto.getPageNum(),dto.getPageSize());
-        IPage<StudentEntity> studentEntityIPage = studentDao.selectPage(iPage, null);
+        IPage<StudentEntity> studentEntityIPage = studentDao.selectPage(iPage, Wrappers.<StudentEntity>lambdaQuery()
+                .like(Objects.nonNull(dto.getName())&& StringUtils.isNotBlank(dto.getName()),StudentEntity::getName,dto.getName())
+                .in(Objects.nonNull(dto.getAge()),StudentEntity::getAge,dto.getAge())
+                .eq(Objects.nonNull(dto.getSex())&&StringUtils.isNotBlank(dto.getSex()),StudentEntity::getSex,dto.getSex()));
         vo.setStudentsList(studentEntityIPage.getRecords());
         vo.setTotal(studentEntityIPage.getTotal());
         return Result.success(vo);

@@ -1,4 +1,4 @@
-package com.whj.common_structures.config;
+package com.whj.local_test.config;
 
 import com.baomidou.mybatisplus.annotation.DbType;
 import com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor;

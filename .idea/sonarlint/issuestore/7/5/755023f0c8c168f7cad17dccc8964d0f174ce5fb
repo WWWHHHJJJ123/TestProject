@@ -1,0 +1,13 @@
+
+
+java:S1488)"_Immediately return this expression instead of assigning it to the temporary variable "records".(İÀãóÿÿÿÿÿ8Ş÷øè1
+p
+java:S3252?"NUse static access with "com.alibaba.excel.EasyExcelFactory" for "writerSheet".(İı°ÿûÿÿÿÿ8ê÷øè1
+g
+java:S3252D"JUse static access with "cn.hutool.core.collection.CollUtil" for "isEmpty".(¿ÿ€‚8ê÷øè1
+e
+java:S3252G"HUse static access with "com.alibaba.excel.EasyExcelFactory" for "write".(Ïíø·8ë÷øè1
+h
+java:S1128"KRemove this unused import 'com.baomidou.mybatisplus.core.toolkit.Wrappers'.(å¦¨Ã8¸ùè1
+T
+java:S1128"2Remove this unused import 'java.util.Collections'.(¢³ïÓşÿÿÿÿ8¸ùè1

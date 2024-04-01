@@ -1,0 +1,28 @@
+
+[	java:S112z"FDefine and throw a dedicated exception instead of using a generic one.(ÛÌÁµ
+b
+java:S1192"LDefine a constant instead of duplicating this literal "E:\\t1.xlsx" 3 times.(—õı¨
+d	java:S116"ORename this field "PATH" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—õı¨
+W
+java:S1075"ARefactor your code to get this URI from a customizable parameter.(—õı¨
+c
+java:S3252-"HUse static access with "com.alibaba.excel.EasyExcelFactory" for "write".(Í·ßıÿÿÿÿ
+W
+java:S1075N"ARefactor your code to get this URI from a customizable parameter.(õîöö
+\	java:S899Q"BDo something with the "boolean" value returned by "createNewFile".(Ğ’Íùÿÿÿÿ
+]
+java:S3252U"HUse static access with "com.alibaba.excel.EasyExcelFactory" for "write".(ŠÉ
+Y
+java:S1854`">Remove this useless assignment to local variable "resultList".(áó¯Èûÿÿÿÿ
+J
+java:S1481`"/Remove this unused "resultList" local variable.(áó¯Èûÿÿÿÿ
+W
+java:S1075b"ARefactor your code to get this URI from a customizable parameter.(õîöö
+\	java:S899e"BDo something with the "boolean" value returned by "createNewFile".(Ğ’Íùÿÿÿÿ
+]
+java:S3252r"HUse static access with "com.alibaba.excel.EasyExcelFactory" for "write".(ŠÉ
+]
+java:S3252|"GUse static access with "com.alibaba.excel.EasyExcelFactory" for "read".(ÇÚ´û
+E	java:S106}"+Replace this use of System.out by a logger.(“–àúÿÿÿÿ
+U
+java:S1128":Remove this unused import 'java.io.FileNotFoundException'.(·î™ùÿÿÿÿ

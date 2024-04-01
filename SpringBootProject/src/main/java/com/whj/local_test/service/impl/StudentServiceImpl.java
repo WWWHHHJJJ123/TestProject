@@ -1,8 +1,8 @@
-package com.whj.common_structures.service.impl;
+package com.whj.local_test.service.impl;
 
-import com.whj.common_structures.domain.entity.StudentEntity;
-import com.whj.common_structures.dao.StudentDao;
-import com.whj.common_structures.service.IStudentService;
+import com.whj.local_test.domain.entity.StudentEntity;
+import com.whj.local_test.dao.StudentDao;
+import com.whj.local_test.service.IStudentService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

@@ -1,4 +1,4 @@
-package com.whj.common_structures.domain;
+package com.whj.local_test.domain;
 
 import lombok.Getter;
 import lombok.Setter;

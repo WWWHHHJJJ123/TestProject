@@ -1,6 +1,6 @@
-package com.whj.common_structures.domain.vo;
+package com.whj.local_test.domain.vo;
 
-import com.whj.common_structures.domain.entity.StudentEntity;
+import com.whj.local_test.domain.entity.StudentEntity;
 import lombok.Data;
 
 import java.util.List;

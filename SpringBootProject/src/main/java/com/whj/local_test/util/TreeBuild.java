@@ -1,6 +1,6 @@
-package com.whj.common_structures.util;
+package com.whj.local_test.util;
 
-import com.whj.common_structures.domain.TreeNode;
+import com.whj.local_test.domain.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;

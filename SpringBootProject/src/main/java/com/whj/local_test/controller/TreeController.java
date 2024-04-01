@@ -1,13 +1,18 @@
-package com.whj.common_structures.controller;
+package com.whj.local_test.controller;
 
 
-import com.whj.common_structures.domain.TreeNode;
-import com.whj.common_structures.domain.entity.TreeEntity;
-import com.whj.common_structures.util.TreeBuild;
+import com.whj.local_test.domain.TreeNode;
+import com.whj.local_test.domain.dto.TreePageDTO;
+import com.whj.local_test.domain.entity.TreeEntity;
+import com.whj.local_test.service.ITreeService;
+import com.whj.local_test.util.TreeBuild;
 import com.whj.test.common.Result;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.math.BigDecimal;
+import javax.servlet.http.HttpServletResponse;
 import java.util.*;
 
 /**
@@ -18,10 +23,15 @@ import java.util.*;
  * @author whj
  * @since 2024-01-15 17:58:06
  */
+@Api(tags = "tree的Controller")
 @RestController
 @RequestMapping("/api")
 @CrossOrigin("http://localhost:7070")
 public class TreeController {
+
+
+    @Autowired
+    private ITreeService treeService;
 
     /**
      * 案例构造一棵树，其余的可共用
@@ -65,13 +75,21 @@ public class TreeController {
         return Result.success(treeEntity);
     }
 
-    public static void main(String[] args) {
-        Map<String,String> map=new HashMap<>();
-        map.put("1","1");
-        map.put("2","2");
-        map.put("4","3");
-        System.out.println(map.getOrDefault("333", "不存在"));
-        System.out.println(map.getOrDefault("1", "不存在"));
+
+    @ApiOperation("列表数据")
+    @PostMapping("/list")
+    public Result<List<TreeEntity>> list(@RequestBody TreePageDTO dto) {
+        List<TreeEntity> list = treeService.list(dto);
+        return Result.success(list);
     }
+
+    @ApiOperation("导出数据")
+    @PostMapping("/export")
+    public void export(@RequestBody TreePageDTO dto,HttpServletResponse response) {
+       treeService.export(dto,response);
+
+    }
+
+
 }
 
