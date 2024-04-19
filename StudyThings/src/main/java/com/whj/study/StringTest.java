@@ -1,5 +1,8 @@
 package com.whj.study;
 
+import cn.hutool.core.util.StrUtil;
+import org.springframework.util.StringUtils;
+
 import java.util.Arrays;
 
 /**
@@ -10,8 +13,8 @@ import java.util.Arrays;
 public class StringTest {
 
     public static void main(String[] args) {
-        int[] arry1={1,2,3,4,5};
-        Arrays.copyOf(arry1,20);
-
+      String s="";
+        System.out.println(s.length());
+        System.out.println(StrUtil.isEmpty(s));
     }
 }

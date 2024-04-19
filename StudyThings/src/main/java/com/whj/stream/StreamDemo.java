@@ -30,6 +30,8 @@ public class StreamDemo {
                 .distinct()
                 .filter(author -> author.getName().length()>=2)
                 .forEach(author -> System.out.println(author));
+
+        Map<Long, String> collect = authors.stream().collect(Collectors.toMap(Author::getId, Author::getName));
     }
 
     public static List<Author> getAuthors() {

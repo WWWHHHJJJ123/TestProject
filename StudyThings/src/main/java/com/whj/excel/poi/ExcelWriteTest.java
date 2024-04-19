@@ -90,7 +90,11 @@ public class ExcelWriteTest {
         System.out.println("Excel生成成功");
     }
 
-    //测试紫涵excel表格画出
+    /**
+     * 测试紫涵excel表格画出
+     * 使用poi导出复杂表格(自定义画)
+     * @throws Exception
+     */
     @Test
     public void testExcel() throws Exception {
         //1.创建工作簿

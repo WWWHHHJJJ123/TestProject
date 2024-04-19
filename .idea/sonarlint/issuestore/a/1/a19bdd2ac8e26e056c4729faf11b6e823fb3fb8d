@@ -1,0 +1,14 @@
+
+:
+java:S1659"Declare "j" on a separate line.(Ò‰„‚þÿÿÿÿ
+Q	java:S125"<This block of commented-out lines of code should be removed.(ï˜èÔ
+5
+java:S16593"Declare "j" on a separate line.(Î…ó
+Q	java:S1256"<This block of commented-out lines of code should be removed.(ï˜èÔ
+5
+java:S1659H"Declare "j" on a separate line.(Î…ó
+D
+java:S1481I".Remove this unused "candidate" local variable.(”æÛñ
+Q	java:S125L"<This block of commented-out lines of code should be removed.(ï˜èÔ
+@	java:S106]"+Replace this use of System.out by a logger.(î€’Å
+Q	java:S125Y"<This block of commented-out lines of code should be removed.(Ýú±Æ

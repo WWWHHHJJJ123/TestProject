@@ -1,0 +1,24 @@
+
+[	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(¥èé
+`	java:S1120"FDefine and throw a dedicated exception instead of using a generic one.(–»Ëÿÿÿÿÿ
+c
+java:S20952"MUse try-with-resources or close this "FileInputStream" in a "finally" clause.(ˆ÷ˆÏ
+e
+java:S20955"JUse try-with-resources or close this "XSSFWorkbook" in a "finally" clause.(ÆÕ„éùÿÿÿÿ
+e
+java:S2095#"JUse try-with-resources or close this "HSSFWorkbook" in a "finally" clause.(¾Á¤Şúÿÿÿÿ
+c
+java:S2095"MUse try-with-resources or close this "FileInputStream" in a "finally" clause.(Û¸ÖŞ
+d	java:S116"ORename this field "PATH" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(®Ôšõ
+W
+java:S1075"ARefactor your code to get this URI from a customizable parameter.(®Ôšõ
+E	java:S106)"+Replace this use of System.out by a logger.(óíêöÿÿÿÿÿ
+E	java:S106;"+Replace this use of System.out by a logger.(óíêöÿÿÿÿÿ
+c
+java:S1128"HRemove this unused import 'org.apache.poi.xssf.streaming.SXSSFWorkbook'.(üÚÓøÿÿÿÿ
+J
+java:S1128"5Remove this unused import 'java.io.FileOutputStream'.(˜«ªg
+F
+java:S1128"0Remove this unused import 'java.io.InputStream'.(¹»º
+K
+java:S1128"0Remove this unused import 'java.time.LocalDate'.(›‘¬èıÿÿÿÿ

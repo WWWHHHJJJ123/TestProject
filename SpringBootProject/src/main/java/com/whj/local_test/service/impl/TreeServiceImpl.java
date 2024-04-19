@@ -13,6 +13,7 @@ import com.whj.local_test.dao.TreeDao;
 import com.whj.local_test.service.ITreeService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.stereotype.Service;
 
@@ -33,6 +34,11 @@ import java.util.List;
 @Slf4j
 public class TreeServiceImpl extends ServiceImpl<TreeDao, TreeEntity> implements ITreeService {
 
+
+    @Autowired
+    private TreeDao treeDao;
+
+
     @Override
     public List<TreeEntity> list(TreePageDTO dto) {
 
@@ -49,11 +55,9 @@ public class TreeServiceImpl extends ServiceImpl<TreeDao, TreeEntity> implements
         int pageNum = 1;
         int pageSize = 100;
 
-
         try {
             ExcelWriter excelWriter = null;
             WriteSheet writeSheet = null;
-
 
             response.setContentType("application/vnd.openxmlformats-officedocument.spreadsheetml.sheet");
             response.setCharacterEncoding("utf-8");

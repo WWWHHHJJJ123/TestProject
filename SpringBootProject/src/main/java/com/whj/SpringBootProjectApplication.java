@@ -16,6 +16,7 @@ public class SpringBootProjectApplication implements WebMvcConfigurer {
 
     public static void main(String[] args) {
         SpringApplication.run(SpringBootProjectApplication.class, args);
+        System.out.println("本地端口号:"+"8080");
     }
 
     @Override

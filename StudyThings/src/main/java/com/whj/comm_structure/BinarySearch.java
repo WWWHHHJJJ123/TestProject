@@ -84,12 +84,10 @@ public class BinarySearch {
     }
 
     public static void main(String[] args) {
-        int[] num = {5};
-        int target = 5;
-//        System.out.println(binarySearchBasicMethod1(a, target));
-//        System.out.println(binarySearchBasicMethod2(a, target));
-//        System.out.println("最左侧元素索引值：" + binarySearchBasicMethodLeft(a, target));
-//        System.out.println("最右侧元素索引值：" + binarySearchBasicMethodRight(a, target));
-        System.out.println(Arrays.binarySearch(num, target));
+        int[] array={1,2,7,8,9};
+        System.out.println(binarySearchBasicMethod1(array, 7));
+        System.out.println(binarySearchBasicMethod1(array,5));
     }
+
+
 }
