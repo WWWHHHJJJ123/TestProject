@@ -1,5 +1,6 @@
 package com.whj.common;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.*;
 
@@ -15,6 +16,7 @@ import java.util.stream.Collectors;
  */
 @Setter
 @Getter
+@JsonInclude(JsonInclude.Include.NON_EMPTY)
 public  class SelectionVo<T> {
     private T value;
     private String label;
