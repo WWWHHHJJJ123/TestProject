@@ -13,8 +13,11 @@ import java.util.Arrays;
 public class StringTest {
 
     public static void main(String[] args) {
-      String s="";
-        System.out.println(s.length());
-        System.out.println(StrUtil.isEmpty(s));
+
+        StringBuilder sb=new StringBuilder("Hello,Word");
+        sb.insert(6,"你好,");
+        System.out.println(String.valueOf(sb));
+        StringBuffer stringBuffer=new StringBuffer();
+        stringBuffer.insert(2,"11");
     }
 }
