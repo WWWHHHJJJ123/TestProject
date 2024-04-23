@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.GetMapping;
  * @创建时间 2023/5/27
  * @描述
  */
-@FeignClient(value = "user-service")
+@FeignClient(value = "user-service",fallbackFactory = BCFeign.class)
 public interface BCFeign {
 
     @GetMapping("/info")
