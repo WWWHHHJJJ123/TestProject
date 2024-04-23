@@ -8,6 +8,8 @@
         <option value="$PROJECT_DIR$/NacosStudy/pom.xml" />
         <option value="$PROJECT_DIR$/StudyThings/pom.xml" />
         <option value="$PROJECT_DIR$/SpringBootProject/pom.xml" />
+        <option value="$PROJECT_DIR$/NacosStudy/01-nacos-client-a/pom.xml" />
+        <option value="$PROJECT_DIR$/NacosStudy/02-nacos-client-b/pom.xml" />
       </list>
     </option>
     <option name="workspaceImportForciblyTurnedOn" value="true" />

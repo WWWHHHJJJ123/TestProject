@@ -7,6 +7,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="SpringBootProject" />
+        <module name="nacos-client-b" />
+        <module name="nacos-client-a" />
         <module name="EasyExcel" />
         <module name="StudyThings" />
         <module name="NacosStudy" />
