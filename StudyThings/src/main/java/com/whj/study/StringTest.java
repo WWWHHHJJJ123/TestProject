@@ -1,9 +1,6 @@
 package com.whj.study;
 
-import cn.hutool.core.util.StrUtil;
-import org.springframework.util.StringUtils;
-
-import java.util.Arrays;
+import cn.hutool.core.util.RandomUtil;
 
 /**
  * @创建人 JieSi
@@ -13,11 +10,16 @@ import java.util.Arrays;
 public class StringTest {
 
     public static void main(String[] args) {
+        int a=4,b=5;
+        System.out.println((int) (a+b)/2);
+        System.out.println((double) (a+b)/2);
+        System.out.println((float) (a+b)/2);
+    }
 
-        StringBuilder sb=new StringBuilder("Hello,Word");
-        sb.insert(6,"你好,");
-        System.out.println(String.valueOf(sb));
-        StringBuffer stringBuffer=new StringBuffer();
-        stringBuffer.insert(2,"11");
+    private static String createCode() {
+        long now = System.currentTimeMillis();
+        String nowStr = (now + "").substring(0, 10);
+        String code = RandomUtil.randomString(3) + nowStr;
+        return code;
     }
 }
