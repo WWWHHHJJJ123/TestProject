@@ -1,0 +1,20 @@
+
+w
+java:S1488A"bImmediately return this expression instead of assigning it to the temporary variable "authorList".( ¹™s
+Q
+java:S1854"";Remove this useless assignment to local variable "collect".(Ý®Ä±
+E	java:S106"+Replace this use of System.out by a logger.(Î‚à÷ÿÿÿÿÿ
+E	java:S106"+Replace this use of System.out by a logger.(ƒ®ß­ýÿÿÿÿ
+[
+java:S1612 "@Replace this lambda with method reference 'System.out::println'.(‚Íª‚ÿÿÿÿÿ
+E	java:S106 "+Replace this use of System.out by a logger.(‚Íª‚ÿÿÿÿÿ
+B
+java:S1481"",Remove this unused "collect" local variable.(Ý®Ä±
+S
+java:S1128"8Remove this unused import 'java.util.function.Consumer'.(Ì†ƒÔùÿÿÿÿ
+N
+java:S1128"8Remove this unused import 'java.util.function.Function'.(»³Íž
+O
+java:S1128	"9Remove this unused import 'java.util.function.Predicate'.(ïÍ–¶
+J
+java:S1128"4Remove this unused import 'java.util.stream.Stream'.(ó÷Ž”

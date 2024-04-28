@@ -1,0 +1,4 @@
+
+@	java:S106"+Replace this use of System.out by a logger.(Ô­§ø
+S
+java:S1128"8Remove this unused import 'java.util.stream.Collectors'.(Óóº´úÿÿÿÿ
