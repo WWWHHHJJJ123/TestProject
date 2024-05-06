@@ -5,6 +5,8 @@ import com.alibaba.fastjson2.JSONObject;
 import com.whj.stream.domain.User;
 import org.junit.jupiter.api.Test;
 
+import java.util.Date;
+
 /**
  * @创建人 JieSi
  * @创建时间 2023/6/6
@@ -52,5 +54,10 @@ public class StringTest {
         System.out.println(s1==S2);
         System.out.print("JSON字符串的equals判断: ");
         System.out.println(s1.equals(S2));
+    }
+
+    @Test
+    public void test22(){
+        System.out.println(new Date());
     }
 }

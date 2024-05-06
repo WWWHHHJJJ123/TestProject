@@ -6,9 +6,12 @@ import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 
 import java.io.Serializable;
+import java.util.Date;
 
 import io.swagger.annotations.ApiModel;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.experimental.Accessors;
 
@@ -25,6 +28,8 @@ import lombok.experimental.Accessors;
 @Accessors(chain = true)
 @TableName("student")
 @ApiModel(value = "StudentEntity对象", description = "")
+@AllArgsConstructor
+@NoArgsConstructor
 public class StudentEntity implements Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -41,5 +46,7 @@ public class StudentEntity implements Serializable {
     @TableField("age")
     private Integer age;
 
+    @TableField("time")
+    private Date time;
 
 }

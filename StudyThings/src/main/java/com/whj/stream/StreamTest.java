@@ -42,5 +42,26 @@ public class StreamTest {
         System.out.println(collect);
     }
 
+    @Test
+    public void test2(){
+        String onlineOrderIgnoreButtonCode="/thirdPart/order/ignore";
+        //线上订单出库按钮 code
+        String onlineOrderOutboundButtonCode="/thirdPart/order/outbound";
+        //线上商品关联按钮 code
+        String onlineGoodsRelationButtonCode="/goods/thirdPart/goodsRelation";
+        //线上商品同步按钮 code
+        String onlineGoodsSynchronizeButtonCode="/goods/thirdsPart/goodsSynchronize";
+        //线上商品管理页面 code
+        String onlineGoodsManagePageCode="/goods/thirdPartGoods";
+        //线上订单管理页面 code
+        String onlineOrderManagePageCode = "/thirdPart/order";
+        List<String> thirdPartAuthCode = Arrays.asList(onlineOrderIgnoreButtonCode,
+                onlineOrderOutboundButtonCode,
+                onlineGoodsRelationButtonCode,
+                onlineGoodsSynchronizeButtonCode,
+                onlineGoodsManagePageCode,
+                onlineOrderManagePageCode);
+        System.out.println(thirdPartAuthCode);
+    }
 
 }
