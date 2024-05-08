@@ -1,0 +1,36 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: springboot_project
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/whj_database?serverTimezone=GMT%2b8
+    username: root
+    password: whj123123
+    type: com.alibaba.druid.pool.DruidDataSource
+  redis:
+    host: localhost
+    port: 6379
+    database: 1
+    lettuce:
+      #Redis连接池配置
+      pool:
+        max-active: 8 #最大连接数
+        max-wait: 100ms #连接池最大阻塞等待时间
+        max-idle: 4 #连接池中的最大空闲连接
+        min-idle: 0 #连接池中的最小空闲连接
+  servlet:
+    multipart:
+      max-file-size: 1024MB
+      max-request-size: 1024MB
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    log-level: trace
+logging:
+  level:
+    com.whj.test.token: debug
+swagger:
+  enable: true
+  production: false
