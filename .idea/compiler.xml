@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="SpringBootProject" />
+        <module name="WhjTest" />
         <module name="EasyExcel" />
         <module name="StudyThings" />
       </profile>
@@ -15,6 +16,8 @@
       <module name="nacos-client-a" target="1.8" />
       <module name="nacos-client-b" target="1.8" />
       <module name="NacosStudy" target="1.8" />
+      <module name="whjtest" target="1.8" />
+      <module name="WhjTest" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
