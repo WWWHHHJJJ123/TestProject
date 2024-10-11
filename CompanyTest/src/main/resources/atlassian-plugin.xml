@@ -1,0 +1,54 @@
+<atlassian-plugin key="com.atlassian.confluence.plugins.view-source" name="Confluence View Source" pluginsVersion="2">
+    <plugin-info>
+        <param name="atlassian-data-center-compatible">true</param>
+        <description>Add a menu item to allow viewing of the source of pages.</description>
+        <version>7.13.5</version>
+        <vendor name="Atlassian" url="https://www.atlassian.com/"/>
+    </plugin-info>
+
+    <analytics-whitelist key="confluenceViewSourceWhitelist" resource="analytics-whitelist.json" />
+
+    <resource name="i18n" type="i18n" location="com/atlassian/confluence/plugins/viewsource/i18n/i18n" />
+
+    <web-item key="view-source" name="View Source Link" section="system.content.action/secondary" weight="20">
+        <label key="view.source.item.title"/>
+        <link linkId="action-view-source-link">/plugins/viewsource/viewpagesrc.action?pageId=$helper.page.id</link>
+        <condition class="com.atlassian.confluence.plugin.descriptor.web.conditions.PagePermissionCondition">
+            <param name="permission">view</param>
+        </condition>
+        <styleClass>action-view-source popup-link</styleClass>
+    </web-item>
+
+
+    <web-resource key="view-source-menu-resources" name="View Source Menu Resources">
+        <resource type="download" name="viewsource.js" location="com/atlassian/confluence/plugins/viewsource/js/viewsource.js"/>
+        <context>page</context>
+        <context>blogpost</context>
+        <dependency>confluence.web.resources:ajs</dependency>
+    </web-resource>
+
+    <web-resource key="view-source-resources" name="View Source Resources">
+        <resource type="download" name="viewsource.css" location="com/atlassian/confluence/plugins/viewsource/css/viewsource.css"/>
+        <context>plugin.viewsource</context>
+    </web-resource>
+
+    <rest key="confluence-view-source-api-rest" path="viewsrc" version="1.0">
+        <description>Provides REST resources for viewing a page's source</description>
+        <package>com.atlassian.confluence.plugins.viewsource.api.v1</package>
+    </rest>
+
+    <xwork name="View Source XWork Actions" key="viewsourceActions">
+        <package name="viewsource" extends="default" namespace="/plugins/viewsource">
+            <default-interceptor-ref name="validatingStack"/>
+            
+            <action name="viewpagesrc" class="com.atlassian.confluence.plugins.viewsource.ViewSourceAction">
+                <result name="pagenotpermitted" type="redirect">
+                    <param name="location">/pages/pagenotpermitted.action?pageId=${page.id}</param> 
+                </result>            
+                <result name="page" type="velocity">/com/atlassian/confluence/plugins/viewsource/templates/viewsource.vm</result>
+                <result name="blogpost" type="velocity">/com/atlassian/confluence/plugins/viewsource/templates/viewsource.vm</result>            
+                <result name="draft" type="velocity">/com/atlassian/confluence/plugins/viewsource/templates/viewsource.vm</result>
+            </action>
+        </package>
+    </xwork>
+</atlassian-plugin>

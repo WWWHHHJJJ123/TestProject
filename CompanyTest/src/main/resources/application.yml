@@ -1,0 +1,18 @@
+mybatis:
+  type-aliases-package:
+server:
+  port: 9000
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://10.10.52.121:3306/confluencedb_node?useSSL=false&serverTimezone=UTC
+    username: root
+    password: Qunhe..123
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+logging:
+  level:
+    com.baomidou.mybatisplus.core.MybatisConfiguration: debug
+    com.baomidou.mybatisplus.extension.plugins: debug
+

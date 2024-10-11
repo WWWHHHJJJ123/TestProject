@@ -1,8 +1,13 @@
 package com.whj.array_test;
 
+import com.whj.array_test.domain.Item;
+import org.junit.jupiter.api.Test;
+
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class ArrayTest {
 
@@ -21,5 +26,18 @@ public class ArrayTest {
         return num * num;
     }
 
+
+    @Test
+    public void test() {
+        List<Item> originalList = new ArrayList<>(Arrays.asList(new Item("A"), new Item("B"), new Item("C")));
+        List<Item> filterList = new ArrayList<>(Arrays.asList(new Item("B"), new Item("C")));
+
+        List<Item> filteredList = originalList.stream()
+                .filter(item -> filterList.stream().noneMatch(f -> f.getName().equals(item.getName())))
+                .collect(Collectors.toList());
+
+        // 输出结果
+        filteredList.forEach(item -> System.out.println(item.getName())); // 输出:
+    }
 
 }

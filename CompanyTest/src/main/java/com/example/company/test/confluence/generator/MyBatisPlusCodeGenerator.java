@@ -1,4 +1,4 @@
-package com.whj.generator;
+package com.example.company.test.confluence.generator;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
@@ -18,16 +18,16 @@ public class MyBatisPlusCodeGenerator {
 
     public static void main(String[] args) {
         //模块名
-        String moduleName = "SpringBootProject";
+        String moduleName = "CompanyTest";
         //作者名 *******************自己的名字**************************
         String author = "whj";
         //数据库连接配置
 /*        String url = "jdbc:mysql://10.98.250.71:3306/eifini_escm_main?useUnicode=true&useSSL=false&characterEncoding=utf8";
         String username = "root";
         String password = "root";*/
-        String url = "jdbc:mysql://127.0.0.1:3306/local_test?useUnicode=true&useSSL=false&characterEncoding=utf8";
+        String url = "jdbc:mysql://10.10.52.121:3306/confluencedb_node?useSSL=false&serverTimezone=UTC";
         String username = "root";
-        String password = "123123";
+        String password = "Qunhe..123";
 /*        String url = "jdbc:mysql://172.16.1.152:3306/yfl_elink_admin?useUnicode=true&useSSL=false&characterEncoding=utf8";
         String username = "root";
         String password = "yl2022!";*/
@@ -35,7 +35,7 @@ public class MyBatisPlusCodeGenerator {
         //生成实体表名配置
         // *********************修改表名***********************
         String[] tables = new String[]{
-                "person"
+                "SPACEPERMISSIONS"
         };
         System.out.println("===================开始生成代码========================");
         run(moduleName, author, url, username, password, tables);
@@ -59,7 +59,7 @@ public class MyBatisPlusCodeGenerator {
                 // 包配置
                 .packageConfig(builder -> {
                     //************************修改代码父包名(最后一级)**************************
-                    builder.parent("com.whj.local_test")     // 父包名
+                    builder.parent("com.example.company.test.confluence")     // 父包名
                             .entity("domain.entity")                 // Entity 包名
                             .service("service")             //	Service 包名
                             .serviceImpl("service.impl")    // Service Impl 包名
@@ -76,7 +76,7 @@ public class MyBatisPlusCodeGenerator {
                             // .addTablePrefix("ums_")// 表名前缀，配置后生成的代码不会有此前缀
                             // entity策略配置
                             .entityBuilder()
-                            .formatFileName("%sDO")// 实体类名称后缀
+                            .formatFileName("%sEntity")// 实体类名称后缀
                             .enableLombok()// 实体类使用lombok,需要自己引入依赖
                             .enableChainModel()// 开启链式调用模式
                             .enableTableFieldAnnotation()// 开启生成实体时生成字段注解@TableField
@@ -89,14 +89,14 @@ public class MyBatisPlusCodeGenerator {
                             .enableRestStyle()// 开启生成@RestController 控制器
                             // service策略配置
                             .serviceBuilder()
-                            .formatServiceFileName("%sService")// 服务层接口名后缀
+                            .formatServiceFileName("I%sService")// 服务层接口名后缀
                             .formatServiceImplFileName("%sServiceImpl")// 服务层实现类名后缀
                             // mapper策略配置
                             .mapperBuilder()
                             .enableMapperAnnotation()// 开启 @Mapper 注解
                             .superClass(BaseMapper.class)
-                            .formatMapperFileName("%sMapper")// 持久层接口名后缀
-                            .formatXmlFileName("%sMapper");// 持久层xml文件后缀
+                            .formatMapperFileName("%sDao")// 持久层接口名后缀
+                            .formatXmlFileName("%sDao");// 持久层xml文件后缀
                 })
                 .execute();
 
