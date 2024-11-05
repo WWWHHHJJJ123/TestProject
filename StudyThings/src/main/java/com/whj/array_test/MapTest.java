@@ -4,6 +4,8 @@ import cn.hutool.core.collection.ListUtil;
 import com.whj.array_test.domain.PersonDto;
 import org.junit.jupiter.api.Test;
 
+import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -51,5 +53,15 @@ public class MapTest {
                 .stream()
                 .collect(toMap(PersonDto::getId, o->o,(v1,v2)->v2));
         System.out.println(collect);
+    }
+
+    @Test
+    public void test3() {
+        Map<Integer,List<Integer>> map=new HashMap<>();
+        map.put(1, Arrays.asList(1,2,3));
+        map.put(2, Arrays.asList(1,2,3));
+        map.put(3, Arrays.asList(1,2,3));
+        map.put(1, Arrays.asList(1,2,4,5));
+        System.out.println(map);
     }
 }

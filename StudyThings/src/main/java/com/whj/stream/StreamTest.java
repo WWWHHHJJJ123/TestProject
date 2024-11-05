@@ -64,4 +64,33 @@ public class StreamTest {
         System.out.println(thirdPartAuthCode);
     }
 
+
+    @Test
+    public void test3(){
+        List<User> list = Arrays.asList(
+                new User(1, "123J", 20),
+                new User(2, "246K", 20),
+                new User(3, "789L", 20),
+                new User(4, "567JKL", 20));
+        List<String> userNames = list.stream()
+                .map(User::getName)
+                .collect(Collectors.toList());
+
+        System.out.println(userNames.contains("123J"));
+    }
+
+    @Test
+    public void test4(){
+        List<User> list = Arrays.asList(
+                new User(1, "123/J", 20),
+                new User(2, "246/K", 20),
+                new User(3, "789/L", 20),
+                new User(4, "567/JKL", 20));
+        List<String> collect = list.stream()
+                .map(s -> {
+                    return s.getName().substring(s.getName().indexOf("/")+1);
+                }).collect(Collectors.toList());
+        System.out.println(collect.contains("M"));
+        System.out.println(collect);
+    }
 }

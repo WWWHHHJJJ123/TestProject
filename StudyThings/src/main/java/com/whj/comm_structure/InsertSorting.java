@@ -8,32 +8,27 @@ package com.whj.comm_structure;
  */
 public class InsertSorting {
 
-    public static void main(String[] args) {
-        int[] sort = sort(getArray());
-        for (int i : sort) {
-            System.out.println(i);
-        }
-    }
-    public static int[] sort(int[] str) {
-        for (int i = 1; i < str.length; i++) {
-            int temp = str[i];
+    public static void insertionSort(int[] arr) {
+        for (int i = 1; i < arr.length; i++) {
+            int key = arr[i];
             int j = i - 1;
-            while (j >= 0) {
-                if (str[j] > temp) {
-                    str[j + 1] = str[j];
-                    j--;
-                } else {
-                    break;
-                }
+
+            // 移动已排序部分的元素
+            while (j >= 0 && arr[j] > key)  {
+                arr[j + 1] = arr[j];
+                j--;
             }
-            str[j + 1] = temp;
+            // 插入当前元素
+            arr[j + 1] = key;
         }
-        return str;
     }
 
-    public static int[] getArray() {
-        int[] array = {3, 5, 2, 8, 1, 4, 10};
-        return array;
+    public static void main(String[] args) {
+        int[] array = {5, 2, 9, 1, 5, 6};
+        insertionSort(array);
+        for (int num : array) {
+            System.out.print(num + " ");
+        }
     }
 
 }

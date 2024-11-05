@@ -76,6 +76,11 @@
             <artifactId>hutool-core</artifactId>
             <version>5.8.23</version>
         </dependency>
+        <dependency>
+            <groupId>com.belerweb</groupId>
+            <artifactId>pinyin4j</artifactId>
+            <version>2.5.0</version>
+        </dependency>
 
     </dependencies>
 </project>
