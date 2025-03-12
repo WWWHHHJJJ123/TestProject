@@ -20,18 +20,12 @@ public class MyBatisPlusCodeGenerator {
         //模块名
         String moduleName = "SpringBootProject";
         //作者名 *******************自己的名字**************************
-        String author = "CiZhong";
+        String author = "123123";
         //数据库连接配置
-/*        String url = "jdbc:mysql://10.98.250.71:3306/eifini_escm_main?useUnicode=true&useSSL=false&characterEncoding=utf8";
-        String username = "root";
-        String password = "root";*/
-        String url = "jdbc:mysql://10.101.2.81:31035/iam?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&useSSL=false";
-//        String url = "jdbc:sqlserver://10.101.2.81;databaseName=iam-dev;failoverPartner=10.12.72.6";
-        String username = "dbuser";
-        String password = "ip0XKLf_8a7Y";
-/*        String url = "jdbc:mysql://172.16.1.152:3306/yfl_elink_admin?useUnicode=true&useSSL=false&characterEncoding=utf8";
-        String username = "root";
-        String password = "yl2022!";*/
+/*        String url = "jdbc:mysql://localhost:12313213/111111?useUnicode=true&useSSL=false&characterEncoding=utf8";*/
+        String url = "jdbc:mysql://localhost:12313213/111111?useUnicode=true&useSSL=false&characterEncoding=utf8";
+        String username = "123123";
+        String password = "123123";
 
         //生成实体表名配置
         // *********************修改表名***********************
