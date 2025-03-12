@@ -20,14 +20,15 @@ public class MyBatisPlusCodeGenerator {
         //模块名
         String moduleName = "SpringBootProject";
         //作者名 *******************自己的名字**************************
-        String author = "whj";
+        String author = "CiZhong";
         //数据库连接配置
 /*        String url = "jdbc:mysql://10.98.250.71:3306/eifini_escm_main?useUnicode=true&useSSL=false&characterEncoding=utf8";
         String username = "root";
         String password = "root";*/
-        String url = "jdbc:mysql://127.0.0.1:3306/local_test?useUnicode=true&useSSL=false&characterEncoding=utf8";
-        String username = "root";
-        String password = "123123";
+        String url = "jdbc:mysql://10.101.2.81:31035/iam?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&useSSL=false";
+//        String url = "jdbc:sqlserver://10.101.2.81;databaseName=iam-dev;failoverPartner=10.12.72.6";
+        String username = "dbuser";
+        String password = "ip0XKLf_8a7Y";
 /*        String url = "jdbc:mysql://172.16.1.152:3306/yfl_elink_admin?useUnicode=true&useSSL=false&characterEncoding=utf8";
         String username = "root";
         String password = "yl2022!";*/
@@ -35,7 +36,7 @@ public class MyBatisPlusCodeGenerator {
         //生成实体表名配置
         // *********************修改表名***********************
         String[] tables = new String[]{
-                "person"
+                "sys_outer_department"
         };
         System.out.println("===================开始生成代码========================");
         run(moduleName, author, url, username, password, tables);
@@ -61,12 +62,12 @@ public class MyBatisPlusCodeGenerator {
                     //************************修改代码父包名(最后一级)**************************
                     builder.parent("com.whj.local_test")     // 父包名
                             .entity("domain.entity")                 // Entity 包名
-                            .service("service")             //	Service 包名
-                            .serviceImpl("service.impl")    // Service Impl 包名
+//                            .service("service")             //	Service 包名
+//                            .serviceImpl("service.impl")    // Service Impl 包名
                             .mapper("dao")               // Mapper 包名
                             .xml("mapper.xml")              //	Mapper XML 包名
-                            .controller("controller")       // Controller 包名
-                            .other("config")                // 自定义文件包名	输出自定义文件时所用到的包名
+//                            .controller("controller")       // Controller 包名
+//                            .other("config")                // 自定义文件包名	输出自定义文件时所用到的包名
                             //****************************修改xml文件路径(最后一级)********************************
                             .pathInfo(Collections.singletonMap(OutputFile.mapperXml, System.getProperty("user.dir") + File.separator + moduleName + "\\src\\main\\resources\\mapper"));// 指定xml位置
                 })
@@ -76,7 +77,7 @@ public class MyBatisPlusCodeGenerator {
                             // .addTablePrefix("ums_")// 表名前缀，配置后生成的代码不会有此前缀
                             // entity策略配置
                             .entityBuilder()
-                            .formatFileName("%sDO")// 实体类名称后缀
+                            .formatFileName("%sEntity")// 实体类名称后缀
                             .enableLombok()// 实体类使用lombok,需要自己引入依赖
                             .enableChainModel()// 开启链式调用模式
                             .enableTableFieldAnnotation()// 开启生成实体时生成字段注解@TableField
@@ -85,12 +86,12 @@ public class MyBatisPlusCodeGenerator {
                             //.logicDeleteColumnName("status")//逻辑删除字段，使用delete方法删除数据时会将status设置为1。调用update方法时并不会将该字段放入修改字段中，而是在条件字段中
                             // controller策略配置
                             .controllerBuilder()
-                            .formatFileName("%sController")// 控制类名称后缀
+//                            .formatFileName("%sController")// 控制类名称后缀
                             .enableRestStyle()// 开启生成@RestController 控制器
                             // service策略配置
                             .serviceBuilder()
-                            .formatServiceFileName("%sService")// 服务层接口名后缀
-                            .formatServiceImplFileName("%sServiceImpl")// 服务层实现类名后缀
+//                            .formatServiceFileName("%sService")// 服务层接口名后缀
+//                            .formatServiceImplFileName("%sServiceImpl")// 服务层实现类名后缀
                             // mapper策略配置
                             .mapperBuilder()
                             .enableMapperAnnotation()// 开启 @Mapper 注解

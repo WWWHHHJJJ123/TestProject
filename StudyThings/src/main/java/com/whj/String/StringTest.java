@@ -1,6 +1,7 @@
 package com.whj.String;
 
 import org.junit.jupiter.api.Test;
+import org.springframework.util.StringUtils;
 
 import java.util.Calendar;
 import java.util.Date;
@@ -34,5 +35,26 @@ public class StringTest {
                 .replace("【周几】", "周三")
                 .replace("【X月X日】", month +"月"+ day + "天");
         System.out.println(repaceString);
+    }
+
+    @Test
+    public void test2(){
+        String s="10.10.50.79,172.168.175.183,0.0.0.0,192.168.128.1,0.0.0.0,0.0.0.0,0.0.0.0,0.0.0.0,0.0.0.0";
+        String[] split = s.split(",");
+        for (String string : split) {
+            System.out.println(string);
+        }
+        System.out.println(StringUtils.isEmpty(s));
+    }
+
+    @Test
+    public void test3(){
+//        cn: hunyuan,mail: hunyuan@qunhemail.com,displayName: 混元
+        String s1="cn: hunyuan";
+        String substring1 = s1.substring(s1.indexOf(":")+2);
+        System.out.println(substring1);
+        String s2="displayName: 混元";
+        String substring2 = s2.substring(s2.indexOf(":")+2);
+        System.out.println(substring2);
     }
 }

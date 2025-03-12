@@ -6,6 +6,7 @@ import org.elasticsearch.client.RequestOptions;
 import org.elasticsearch.client.RestClient;
 import org.elasticsearch.client.RestHighLevelClient;
 import org.elasticsearch.common.xcontent.XContentType;
+import org.elasticsearch.index.query.QueryBuilders;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -87,6 +88,9 @@ public class HotelIndexTest {
         CreateIndexRequest request = new CreateIndexRequest("hotel");
         // 2.准备请求的参数：DSL语句
         request.source(MAPPING_TEMPLATE, XContentType.JSON);
+//        QueryBuilders.matchQuery()
+        
+
         // 3.发送请求
         client.indices().create(request, RequestOptions.DEFAULT);
     }

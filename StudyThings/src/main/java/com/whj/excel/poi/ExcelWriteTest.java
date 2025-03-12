@@ -24,7 +24,7 @@ import java.time.LocalDate;
  */
 public class ExcelWriteTest {
 
-    String PATH = "E:\\";
+    String PATH = "D:\\";
 
     //03版本
     @Test
@@ -558,7 +558,7 @@ public class ExcelWriteTest {
         pict.resize(); // 自适应图片大小
 
         // 保存工作簿
-        FileOutputStream fileOut = new FileOutputStream("E:\\images.xlsx");
+        FileOutputStream fileOut = new FileOutputStream(PATH + "testWrite07BigData.xls");
         workbook.write(fileOut);
         fileOut.close();
         workbook.close();
