@@ -5,6 +5,7 @@ import com.alibaba.excel.EasyExcel;
 import com.alibaba.excel.ExcelWriter;
 import com.alibaba.excel.write.metadata.WriteSheet;
 import com.alibaba.excel.write.style.column.LongestMatchColumnWidthStyleStrategy;
+import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.whj.local_test.domain.dto.TreePageDTO;
@@ -42,8 +43,8 @@ public class TreeServiceImpl extends ServiceImpl<TreeDao, TreeEntity> implements
     @Override
     public List<TreeEntity> list(TreePageDTO dto) {
 
-        Page<TreeEntity> page = new Page<>(dto.getPageNum(), dto.getPageSize());
-        Page<TreeEntity> treeEntityPage = this.page(page);
+        IPage<TreeEntity> page = new Page<>(dto.getPageNum(), dto.getPageSize());
+        IPage<TreeEntity> treeEntityPage = treeDao.selectPage(page,null);
         List<TreeEntity> records = treeEntityPage.getRecords();
         return records;
     }

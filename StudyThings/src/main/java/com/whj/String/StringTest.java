@@ -57,4 +57,15 @@ public class StringTest {
         String substring2 = s2.substring(s2.indexOf(":")+2);
         System.out.println(substring2);
     }
+
+    /**
+     * 测试判空字符串工具类
+     */
+    @Test
+    public void test4(){
+        System.out.println("".trim().isEmpty());
+        System.out.println(" ".trim().isEmpty());
+        System.out.println("你好".trim().isEmpty());
+        System.out.println("".trim().isEmpty());
+    }
 }
