@@ -33,13 +33,13 @@ public class StringTest {
         String repaceString = s.replace("【Mgr花名】", "【" + "cizhong" + "】")
                 .replace("【员工花名】", "【" + "cizhong" + "】")
                 .replace("【周几】", "周三")
-                .replace("【X月X日】", month +"月"+ day + "天");
+                .replace("【X月X日】", month + "月" + day + "天");
         System.out.println(repaceString);
     }
 
     @Test
-    public void test2(){
-        String s="10.10.50.79,172.168.175.183,0.0.0.0,192.168.128.1,0.0.0.0,0.0.0.0,0.0.0.0,0.0.0.0,0.0.0.0";
+    public void test2() {
+        String s = "10.10.50.79,172.168.175.183,0.0.0.0,192.168.128.1,0.0.0.0,0.0.0.0,0.0.0.0,0.0.0.0,0.0.0.0";
         String[] split = s.split(",");
         for (String string : split) {
             System.out.println(string);
@@ -48,13 +48,13 @@ public class StringTest {
     }
 
     @Test
-    public void test3(){
+    public void test3() {
 //        cn: hunyuan,mail: hunyuan@qunhemail.com,displayName: 混元
-        String s1="cn: hunyuan";
-        String substring1 = s1.substring(s1.indexOf(":")+2);
+        String s1 = "cn: hunyuan";
+        String substring1 = s1.substring(s1.indexOf(":") + 2);
         System.out.println(substring1);
-        String s2="displayName: 混元";
-        String substring2 = s2.substring(s2.indexOf(":")+2);
+        String s2 = "displayName: 混元";
+        String substring2 = s2.substring(s2.indexOf(":") + 2);
         System.out.println(substring2);
     }
 
@@ -62,10 +62,27 @@ public class StringTest {
      * 测试判空字符串工具类
      */
     @Test
-    public void test4(){
+    public void test4() {
         System.out.println("".trim().isEmpty());
         System.out.println(" ".trim().isEmpty());
         System.out.println("你好".trim().isEmpty());
         System.out.println("".trim().isEmpty());
     }
+
+    /**
+     * 测试StringUtils的haseText方法
+     */
+    @Test
+    public void test5() {
+        System.out.println(StringUtils.hasText(null));
+        System.out.println(StringUtils.hasText(""));
+        System.out.println(StringUtils.hasText(" "));
+        System.out.println(StringUtils.hasText("123"));
+        System.out.println(StringUtils.hasText("  123"));
+        System.out.println(StringUtils.hasText("  123   "));
+        System.out.println(StringUtils.hasText("123  "));
+
+    }
+
+
 }

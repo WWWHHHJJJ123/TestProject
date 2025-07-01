@@ -1,5 +1,5 @@
-server:
-  port: 8080
+#server:
+#  port: 8080
 spring:
   application:
     name: springboot_project
@@ -30,6 +30,23 @@ mybatis-plus:
 logging:
   level:
     com.whj.test.token: debug
+    org.springframework.security: DEBUG  # 开启 Spring Security 的调试日志，便于排查问题
+    org.keycloak: DEBUG
 swagger:
   enable: true
   production: false
+
+#keycloak:
+#  realm: ssoRealm                  # 替换为您的 Realm 名称
+#  auth-server-url: http://10.10.52.138:9000/    # Keycloak 服务器地址，注意 /auth 路径
+#  resource: ssoClient               # 替换为您在 Keycloak 中为网关创建的 Client ID
+#  credentials:
+#    secret: tfwIOv07qVDXukbhc4VZymMGZdfE1Rh4   # 替换为您的 Client Secret
+#  bearer-only: false                     # 网关需要验证 Token，因此设置为 false
+#  ssl-required: external                 # 根据您的 Keycloak 配置调整
+#  use-resource-role-mappings: true
+#
+server:
+  port: 8088
+
+

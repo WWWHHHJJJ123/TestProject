@@ -97,11 +97,11 @@
             <scope>test</scope>
         </dependency>
 
-        <!--         SpringSecurity框架       -->
-        <!--        <dependency>-->
-        <!--            <groupId>org.springframework.boot</groupId>-->
-        <!--            <artifactId>spring-boot-starter-security</artifactId>-->
-        <!--        </dependency>-->
+        <!--SpringSecurity框架-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
 
         <!-- spring data redis依赖  -->
         <dependency>
@@ -196,40 +196,55 @@
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
         </dependency>
-
+        <!-- Keycloak Spring Boot Starter -->
+<!--        <dependency>-->
+<!--            <groupId>org.keycloak</groupId>-->
+<!--            <artifactId>keycloak-spring-boot-starter</artifactId>-->
+<!--            <version>17.0.1</version> &lt;!&ndash; 根据您的 Keycloak 版本选择合适的 Adapter 版本 &ndash;&gt;-->
+<!--        </dependency>-->
+        <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-gateway -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-gateway</artifactId>
+            <version>3.0.3</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-oauth2-client</artifactId>
+        </dependency>
     </dependencies>
 
-    <profiles>
-        <profile>
-            <!--不同环境Profile的唯一id-->
-            <id>dev</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
-            <properties>
-                <!--environment是自定义的字段（名字随便起），自定义字段可以有多个，确保与配置文件一致-->
-                <environment>dev</environment>
-            </properties>
-        </profile>
-        <profile>
-            <id>test</id>
-            <activation>
-                <activeByDefault>false</activeByDefault>
-            </activation>
-            <properties>
-                <environment>test</environment>
-            </properties>
-        </profile>
-        <profile>
-            <id>prod</id>
-            <activation>
-                <activeByDefault>false</activeByDefault>
-            </activation>
-            <properties>
-                <environment>prod</environment>
-            </properties>
-        </profile>
-    </profiles>
+<!--    <profiles>-->
+<!--        <profile>-->
+<!--            &lt;!&ndash;不同环境Profile的唯一id&ndash;&gt;-->
+<!--            <id>dev</id>-->
+<!--            <activation>-->
+<!--                <activeByDefault>true</activeByDefault>-->
+<!--            </activation>-->
+<!--            <properties>-->
+<!--                &lt;!&ndash;environment是自定义的字段（名字随便起），自定义字段可以有多个，确保与配置文件一致&ndash;&gt;-->
+<!--                <environment>dev</environment>-->
+<!--            </properties>-->
+<!--        </profile>-->
+<!--        <profile>-->
+<!--            <id>test</id>-->
+<!--            <activation>-->
+<!--                <activeByDefault>false</activeByDefault>-->
+<!--            </activation>-->
+<!--            <properties>-->
+<!--                <environment>test</environment>-->
+<!--            </properties>-->
+<!--        </profile>-->
+<!--        <profile>-->
+<!--            <id>prod</id>-->
+<!--            <activation>-->
+<!--                <activeByDefault>false</activeByDefault>-->
+<!--            </activation>-->
+<!--            <properties>-->
+<!--                <environment>prod</environment>-->
+<!--            </properties>-->
+<!--        </profile>-->
+<!--    </profiles>-->
 
     <build>
         <plugins>
