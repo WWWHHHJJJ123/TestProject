@@ -20,22 +20,20 @@ public class MyBatisPlusCodeGenerator {
         //模块名
         String moduleName = "CompanyTest";
         //作者名 *******************自己的名字**************************
-        String author = "whj";
+        String author = "cizhong";
         //数据库连接配置
-/*        String url = "jdbc:mysql://10.98.250.71:3306/eifini_escm_main?useUnicode=true&useSSL=false&characterEncoding=utf8";
-        String username = "root";
-        String password = "root";*/
-        String url = "jdbc:mysql://10.10.52.121:3306/confluencedb_node?useSSL=false&serverTimezone=UTC";
-        String username = "root";
-        String password = "Qunhe..123";
-/*        String url = "jdbc:mysql://172.16.1.152:3306/yfl_elink_admin?useUnicode=true&useSSL=false&characterEncoding=utf8";
-        String username = "root";
-        String password = "yl2022!";*/
+
+        String url = "jdbc:mysql://useSSL=false&serverTimezone=UTC";
+        String username = "";
+        String password = "%";
+/*        String url = "jdbc:mysql:///?useUnicode=true&useSSL=false&characterEncoding=utf8";
+        String username = "";
+        String password = "";*/
 
         //生成实体表名配置
         // *********************修改表名***********************
         String[] tables = new String[]{
-                "SPACEPERMISSIONS"
+                ""
         };
         System.out.println("===================开始生成代码========================");
         run(moduleName, author, url, username, password, tables);

@@ -84,5 +84,13 @@ public class StringTest {
 
     }
 
+    @Test
+    public void test6(){
+        String specificationId="6NEcTowU558A00:2c49e928304d28fab384d76ff167abd1b859815b";
+        String s="6NEcTowU558A00";
+        System.out.println(specificationId.contains(s));
+    }
+
+
 
 }
