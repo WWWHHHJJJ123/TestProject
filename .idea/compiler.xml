@@ -12,6 +12,15 @@
         <module name="CompanyTest" />
         <module name="StudyThings" />
       </profile>
+      <profile name="Annotation profile for SpringAiMcpTest" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="D:/Maven/MavenRepository/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
+        </processorPath>
+        <module name="SpringAiMcpTest" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="nacos-client-a" target="1.8" />
@@ -23,6 +32,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="SpringAiMcpTest" options="-parameters" />
       <module name="SpringBootProject" options="-parameters" />
     </option>
   </component>
