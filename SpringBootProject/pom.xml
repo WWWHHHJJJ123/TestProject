@@ -102,7 +102,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
-
         <!-- spring data redis依赖  -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -203,11 +202,11 @@
 <!--            <version>17.0.1</version> &lt;!&ndash; 根据您的 Keycloak 版本选择合适的 Adapter 版本 &ndash;&gt;-->
 <!--        </dependency>-->
         <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-gateway -->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-gateway</artifactId>
-            <version>3.0.3</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.cloud</groupId>-->
+<!--            <artifactId>spring-cloud-starter-gateway</artifactId>-->
+<!--            <version>3.0.3</version>-->
+<!--        </dependency>-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-oauth2-client</artifactId>

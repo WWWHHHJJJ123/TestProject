@@ -24,6 +24,34 @@ spring:
     multipart:
       max-file-size: 1024MB
       max-request-size: 1024MB
+#      ouath2的security集成
+  security:
+    oauth2:
+      client:
+        registration:
+          # Google OAuth2 示例
+          google:
+            client-id: your-client-id
+            client-secret: your-client-secret
+            scope:
+              - email
+              - profile
+
+          # GitHub OAuth2 示例
+          github:
+            client-id: your-github-client-id
+            client-secret: your-github-client-secret
+            scope:
+              - user:email
+              - read:user
+
+        provider:
+          # 自定义 OAuth2 提供商示例
+          custom:
+            authorization-uri: https://provider.com/oauth2/authorize
+            token-uri: https://provider.com/oauth2/token
+            user-info-uri: https://provider.com/oauth2/userinfo
+            user-name-attribute: name
 mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
