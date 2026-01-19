@@ -26,32 +26,14 @@ spring:
       max-request-size: 1024MB
 #      ouath2的security集成
   security:
-    oauth2:
-      client:
-        registration:
-          # Google OAuth2 示例
-          google:
-            client-id: your-client-id
-            client-secret: your-client-secret
-            scope:
-              - email
-              - profile
-
-          # GitHub OAuth2 示例
-          github:
-            client-id: your-github-client-id
-            client-secret: your-github-client-secret
-            scope:
-              - user:email
-              - read:user
-
-        provider:
-          # 自定义 OAuth2 提供商示例
-          custom:
-            authorization-uri: https://provider.com/oauth2/authorize
-            token-uri: https://provider.com/oauth2/token
-            user-info-uri: https://provider.com/oauth2/userinfo
-            user-name-attribute: name
+    user:
+      name: demo-user # 定义一个用于登录的用户名
+      password: demo-pass # 定义该用户的密码
+    jackson:
+      serialization:
+        write-dates-as-timestamps: false # 让日期返回格式更友好
+authorization-server:
+  issuer: http://localhost:9000
 mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
@@ -75,6 +57,6 @@ swagger:
 #  use-resource-role-mappings: true
 #
 server:
-  port: 8088
+  port: 9000 # 授权服务器运行在 9000 端口
 
 

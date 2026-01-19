@@ -1,7 +1,6 @@
 package com.spring.mcp.test.springaimcptest.model;
 
 import lombok.Data;
-import lombok.Value;
 
 /**
  * @author CiZhong

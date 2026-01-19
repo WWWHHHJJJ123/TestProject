@@ -1,5 +1,6 @@
-package com.spring.mcp.test.springaimcptest.service;
+package com.spring.mcp.test.springaimcptest.service.impl;
 
+import com.spring.mcp.test.springaimcptest.service.McpToolService;
 import org.springframework.ai.tool.annotation.Tool;
 import org.springframework.stereotype.Service;
 
@@ -13,7 +14,7 @@ import java.util.Random;
  * @since 2026/1/7 16:37
  */
 @Service
-public class WeatherService {
+public class WeatherService implements McpToolService {
 
     private static final List<String> CONDITIONS = List.of(
             "晴", "多云", "阴", "小雨", "中雨", "大雨", "雪"
